@@ -11,28 +11,47 @@
 // que se piden en la práctica. Tiene como entrada la información de los
 // sensores y devuelve la acción a realizar.
 Action ComportamientoJugador::think(Sensores sensores) {
-	Action accion = actIDLE;
-	// Estoy en el nivel 1
+  Action accion = actIDLE;
 
-	actual.fila        = sensores.posF;
-	actual.columna     = sensores.posC;
-	actual.orientacion = sensores.sentido;
+  /*
+  // código para usar sensores 
+  if (sensores.terreno[2]=='P' or sensores.terreno[2]=='M' or sensores.superficie[2]=='a') {
 
-	cout << "Fila: " << actual.fila << endl;
-	cout << "Col : " << actual.columna << endl;
-	cout << "Ori : " << actual.orientacion << endl;
+    accion = actTURN_R;
+  }
+  else {
+    accion = actFORWARD;
+  }
+  */
 
-	destino.fila       = sensores.destinoF;
-	destino.columna    = sensores.destinoC;
+  
+  unsigned char contenidoCasilla;
 
-	if (sensores.nivel != 4){
-		bool hay_plan = pathFinding (sensores.nivel, actual, destino, plan);
-	}
-	else {
-		// Estoy en el nivel 2
-		cout << "Aún no implementado el nivel 2" << endl;
-	}
+  switch (sensores.sentido) {
+  case norte:
+    contenidoCasilla = mapaResultado[sensores.PosF-1][sensores.posC];
+    break;
+    
+  case sur:
+    contenidoCasilla = mapaResultado[sensores.PosF+1][sensores.posC];
+    break;
+    
+  case este:
+    contenidoCasilla = mapaResultado[sensores.PosF][sensores.posC+1];
+    break; 
 
+  case oeste:
+    contenidoCasilla = mapaResultado[sensores.PosF][sensores.posC-1];
+    break;
+
+    if (contenidoCasilla=='P' or contenidoCasilla=='M' or contenidoCasilla[2]=='a') {
+
+    accion = actTURN_R;
+  }
+  else {
+    accion = actFORWARD;
+  }
+    
   return accion;
 }
 
@@ -40,22 +59,22 @@ Action ComportamientoJugador::think(Sensores sensores) {
 // Llama al algoritmo de busqueda que se usará en cada comportamiento del agente
 // Level representa el comportamiento en el que fue iniciado el agente.
 bool ComportamientoJugador::pathFinding (int level, const estado &origen, const estado &destino, list<Action> &plan){
-	switch (level){
-		case 1: cout << "Busqueda en profundad\n";
-			      return pathFinding_Profundidad(origen,destino,plan);
-						break;
-		case 2: cout << "Busqueda en Anchura\n";
-			      // Incluir aqui la llamada al busqueda en anchura
-						break;
-		case 3: cout << "Busqueda Costo Uniforme\n";
-						// Incluir aqui la llamada al busqueda de costo uniforme
-						break;
-		case 4: cout << "Busqueda para el reto\n";
-						// Incluir aqui la llamada al algoritmo de búsqueda usado en el nivel 2
-						break;
-	}
-	cout << "Comportamiento sin implementar\n";
-	return false;
+  switch (level){
+  case 1: cout << "Busqueda en profundad\n";
+    return pathFinding_Profundidad(origen,destino,plan);
+    break;
+  case 2: cout << "Busqueda en Anchura\n";
+    // Incluir aqui la llamada al busqueda en anchura
+    break;
+  case 3: cout << "Busqueda Costo Uniforme\n";
+    // Incluir aqui la llamada al busqueda de costo uniforme
+    break;
+  case 4: cout << "Busqueda para el reto\n";
+    // Incluir aqui la llamada al algoritmo de búsqueda usado en el nivel 2
+    break;
+  }
+  cout << "Comportamiento sin implementar\n";
+  return false;
 }
 
 
@@ -64,10 +83,10 @@ bool ComportamientoJugador::pathFinding (int level, const estado &origen, const 
 // Dado el código en carácter de una casilla del mapa dice si se puede
 // pasar por ella sin riegos de morir o chocar.
 bool EsObstaculo(unsigned char casilla){
-	if (casilla=='P' or casilla=='M')
-		return true;
-	else
-	  return false;
+  if (casilla=='P' or casilla=='M')
+    return true;
+  else
+    return false;
 }
 
 
@@ -136,41 +155,41 @@ bool ComportamientoJugador::pathFinding_Profundidad(const estado &origen, const 
 
 	pila.push(current);
 
-  while (!pila.empty() and (current.st.fila!=destino.fila or current.st.columna != destino.columna)){
+	while (!pila.empty() and (current.st.fila!=destino.fila or current.st.columna != destino.columna)){
 
-		pila.pop();
-		generados.insert(current.st);
+	  pila.pop();
+	  generados.insert(current.st);
 
-		// Generar descendiente de girar a la derecha
-		nodo hijoTurnR = current;
-		hijoTurnR.st.orientacion = (hijoTurnR.st.orientacion+1)%4;
-		if (generados.find(hijoTurnR.st) == generados.end()){
-			hijoTurnR.secuencia.push_back(actTURN_R);
-			pila.push(hijoTurnR);
+	  // Generar descendiente de girar a la derecha
+	  nodo hijoTurnR = current;
+	  hijoTurnR.st.orientacion = (hijoTurnR.st.orientacion+1)%4;
+	  if (generados.find(hijoTurnR.st) == generados.end()){
+	    hijoTurnR.secuencia.push_back(actTURN_R);
+	    pila.push(hijoTurnR);
 
-		}
+	  }
 
-		// Generar descendiente de girar a la izquierda
-		nodo hijoTurnL = current;
-		hijoTurnL.st.orientacion = (hijoTurnL.st.orientacion+3)%4;
-		if (generados.find(hijoTurnL.st) == generados.end()){
-			hijoTurnL.secuencia.push_back(actTURN_L);
-			pila.push(hijoTurnL);
-		}
+	  // Generar descendiente de girar a la izquierda
+	  nodo hijoTurnL = current;
+	  hijoTurnL.st.orientacion = (hijoTurnL.st.orientacion+3)%4;
+	  if (generados.find(hijoTurnL.st) == generados.end()){
+	    hijoTurnL.secuencia.push_back(actTURN_L);
+	    pila.push(hijoTurnL);
+	  }
 
-		// Generar descendiente de avanzar
-		nodo hijoForward = current;
-		if (!HayObstaculoDelante(hijoForward.st)){
-			if (generados.find(hijoForward.st) == generados.end()){
-				hijoForward.secuencia.push_back(actFORWARD);
-				pila.push(hijoForward);
-			}
-		}
+	  // Generar descendiente de avanzar
+	  nodo hijoForward = current;
+	  if (!HayObstaculoDelante(hijoForward.st)){
+	    if (generados.find(hijoForward.st) == generados.end()){
+	      hijoForward.secuencia.push_back(actFORWARD);
+	      pila.push(hijoForward);
+	    }
+	  }
 
-		// Tomo el siguiente valor de la pila
-		if (!pila.empty()){
-			current = pila.top();
-		}
+	  // Tomo el siguiente valor de la pila
+	  if (!pila.empty()){
+	    current = pila.top();
+	  }
 	}
 
   cout << "Terminada la busqueda\n";
