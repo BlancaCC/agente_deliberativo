@@ -5,6 +5,7 @@
 #include <cmath>
 #include <set>
 #include <stack>
+#include <queue> // std::priority_queue Para el costo uniforme 
 
 
 // Este es el método principal que debe contener los 4 Comportamientos_Jugador
@@ -344,4 +345,40 @@ bool ComportamientoJugador::pathFinding_Anchura(const estado &origen, const esta
 
 
   return false;
+}
+
+
+//____________  BÚSQUED DE COSTO UNIFORME ___________-
+
+struct nodoUnidorme {
+  nodo n;
+  int bateriaGastada; 
+};
+
+
+// función coste  (cuando mayor sea peor es)
+
+//sensores.terreno[]; 
+int  ComportamientoJugador::gastoBateria( char tipoCasilla) {
+
+  int gasto = 1; 
+  switch( tipoCasilla ) {
+  case 'A':
+    if (bikiniEquipado()) gasto = 10;
+    else gasto =100;
+    break;
+
+  case 'B':
+    if (zapatillasEquipadas()) gasto = 50;
+    else gasto =5;
+    break;
+    
+  case 'T':
+    gasto = 2;
+    break; 
+    
+  
+    return gasto;
+  }
+			  
 }

@@ -30,6 +30,7 @@ class ComportamientoJugador : public Comportamiento {
       destino.columna = -1;
       destino.orientacion = -1;
       hayplan=false;
+
     }
     ComportamientoJugador(const ComportamientoJugador & comport) : Comportamiento(comport){}
     ~ComportamientoJugador(){}
@@ -46,6 +47,10 @@ class ComportamientoJugador : public Comportamiento {
     list<Action> plan;
     bool hayplan;
 
+  //añado mis variables
+  bool bikini = false;
+  bool zapatillas = false; 
+
     // Métodos privados de la clase
     bool pathFinding(int level, const estado &origen, const estado &destino, list<Action> &plan);
     bool pathFinding_Profundidad(const estado &origen, const estado &destino, list<Action> &plan);
@@ -57,6 +62,12 @@ class ComportamientoJugador : public Comportamiento {
   // ------- MÉTODOS DE BÚSQUEDA -------
   //en anchura
   bool pathFinding_Anchura(const estado &origen, const estado &destino, list<Action> &plan);
+
+  // por coste uniforme
+  // variables auxiliares
+  int gastoBateria( char tipoCasilla);
+  bool bikiniEquipado(){return bikini;};
+  bool zapatillasEquipadas(){ return zapatillas;}
   
 };
 
