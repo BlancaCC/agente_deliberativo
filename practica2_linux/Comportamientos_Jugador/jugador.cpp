@@ -64,7 +64,7 @@ bool ComportamientoJugador::pathFinding (int level, const estado &origen, const 
 // Dado el código en carácter de una casilla del mapa dice si se puede
 // pasar por ella sin riegos de morir o chocar.
 bool EsObstaculo(unsigned char casilla){
-	if (casilla=='P' or casilla=='M' or casilla =='D')
+	if (casilla=='P' or casilla=='M')
 		return true;
 	else
 	  return false;

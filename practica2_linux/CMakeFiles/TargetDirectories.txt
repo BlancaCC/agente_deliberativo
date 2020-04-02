@@ -1,9 +1,0 @@
-/home/pedro/repositorio/agente_deliberativo/practica2_linux/CMakeFiles/BelkanSG.dir
-/home/pedro/repositorio/agente_deliberativo/practica2_linux/CMakeFiles/Belkan.dir
-/home/pedro/repositorio/agente_deliberativo/practica2_linux/CMakeFiles/obj3DLib.dir
-/home/pedro/repositorio/agente_deliberativo/practica2_linux/CMakeFiles/edit_cache.dir
-/home/pedro/repositorio/agente_deliberativo/practica2_linux/CMakeFiles/GLUILib.dir
-/home/pedro/repositorio/agente_deliberativo/practica2_linux/CMakeFiles/modelosBelkanLib.dir
-/home/pedro/repositorio/agente_deliberativo/practica2_linux/CMakeFiles/comportamientosLib.dir
-/home/pedro/repositorio/agente_deliberativo/practica2_linux/CMakeFiles/rebuild_cache.dir
-/home/pedro/repositorio/agente_deliberativo/practica2_linux/CMakeFiles/motorLib.dir
