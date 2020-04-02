@@ -53,6 +53,11 @@ class ComportamientoJugador : public Comportamiento {
     void PintaPlan(list<Action> plan);
     bool HayObstaculoDelante(estado &st);
 
+
+  // ------- MÉTODOS DE BÚSQUEDA -------
+  //en anchura
+  bool pathFinding_Anchura(const estado &origen, const estado &destino, list<Action> &plan);
+  
 };
 
 #endif
