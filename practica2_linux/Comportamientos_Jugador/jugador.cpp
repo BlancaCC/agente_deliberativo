@@ -27,7 +27,7 @@ Action ComportamientoJugador::think(Sensores sensores) {
   destino.columna    = sensores.destinoC;
 
   if (sensores.nivel != 4){
-    bool hay_plan = pathFinding (sensores.nivel, actual, destino, plan);
+    bool hay_plan = pathFinding (sensores.nivel, actual, destino, plan, sensores);
   }
   else {
     // Estoy en el nivel 2
@@ -40,7 +40,7 @@ Action ComportamientoJugador::think(Sensores sensores) {
 
 // Llama al algoritmo de busqueda que se usará en cada comportamiento del agente
 // Level representa el comportamiento en el que fue iniciado el agente.
-bool ComportamientoJugador::pathFinding (int level, const estado &origen, const estado &destino, list<Action> &plan){
+bool ComportamientoJugador::pathFinding (int level, const estado &origen, const estado &destino, list<Action> &plan, Sensores sensores){
   switch (level){
   case 1: cout << "Busqueda en profundad\n";
     return pathFinding_Profundidad(origen,destino,plan);
@@ -51,6 +51,8 @@ bool ComportamientoJugador::pathFinding (int level, const estado &origen, const 
     break;
   case 3: cout << "Busqueda Costo Uniforme\n";
     // Incluir aqui la llamada al busqueda de costo uniforme
+    
+    return pathFinding_CostoUniforme(origen, destino, plan, sensores);
     break;
   case 4: cout << "Busqueda para el reto\n";
     // Incluir aqui la llamada al algoritmo de búsqueda usado en el nivel 2
@@ -350,10 +352,17 @@ bool ComportamientoJugador::pathFinding_Anchura(const estado &origen, const esta
 
 //____________  BÚSQUED DE COSTO UNIFORME ___________-
 
-struct nodoUnidorme {
+struct nodoUniforme {
   nodo n;
-  int bateriaGastada; 
+  int bateriaGastada;
+
+  //tendrá preferencia en la cola el que menos batería lleve gastada 
+  bool operator<(const nodoUniforme & otroNodo) const
+    {
+        return bateriaGastada > otroNodo.bateriaGastada;
+    }
 };
+
 
 
 // función coste  (cuando mayor sea peor es)
@@ -381,4 +390,86 @@ int  ComportamientoJugador::gastoBateria( char tipoCasilla) {
     return gasto;
   }
 			  
+}
+
+
+// Implementación del algoritmo de búsqueda de costo uniforme
+
+bool ComportamientoJugador::pathFinding_CostoUniforme(const estado &origen, const estado &destino, list<Action> &plan, Sensores sensores) {
+  //Borro la lista
+  cout << "Calculando plan\n";
+  plan.clear();
+  set<estado,ComparaEstados> generados; // Lista de Cerrados
+  stack<nodoUniforme> cola_prioridad;		        // Lista de Abiertos
+
+  nodoUniforme current;
+  current.n.st = origen;
+  current.n.secuencia.empty();
+  current.bateriaGastada = 0; 
+
+  cola_prioridad.push(current);
+
+  
+  while (!cola_prioridad.empty() and (current.n.st.fila!=destino.fila or current.n.st.columna != destino.columna)){
+
+    cout << " =========== \n Se selecciona padre con batería:  " << current.bateriaGastada << "\n=================================="<<endl; 
+    cola_prioridad.pop();
+    generados.insert(current.n.st);
+
+    // Generar descendiente de girar a la derecha
+    nodoUniforme  hijoTurnR = current;
+    hijoTurnR.n.st.orientacion = (hijoTurnR.n.st.orientacion+1)%4;
+    if (generados.find(hijoTurnR.n.st) == generados.end()){
+      hijoTurnR.bateriaGastada += gastoBateria( sensores.terreno[0]);
+      cout << "Se anade hijo derecho con bateria " << hijoTurnR.bateriaGastada << endl; 
+      hijoTurnR.n.secuencia.push_back(actTURN_R);
+      cola_prioridad.push(hijoTurnR);
+
+    }
+
+    // Generar descendiente de girar a la izquierda
+    nodoUniforme  hijoTurnL = current;
+    hijoTurnL.n.st.orientacion = (hijoTurnL.n.st.orientacion+3)%4;
+    if (generados.find(hijoTurnL.n.st) == generados.end()){
+      hijoTurnL.bateriaGastada += gastoBateria( sensores.terreno[0]);
+      cout << "Se anade hijo izquierdo  con bateria " << hijoTurnL.bateriaGastada << endl; 
+      hijoTurnL.n.secuencia.push_back(actTURN_L);
+      cola_prioridad.push(hijoTurnL);
+    }
+
+    // Generar descendiente de avanzar
+    nodoUniforme  hijoForward = current;
+    hijoForward.bateriaGastada += gastoBateria( sensores.terreno[0]); //(debemos contabilizarlo antes de que avance)
+    cout << "Se anade hijo delante con bateria " << hijoForward.bateriaGastada << endl; 
+    if (!HayObstaculoDelante(hijoForward.n.st)){
+      if (generados.find(hijoForward.n.st) == generados.end()){
+	hijoForward.n.secuencia.push_back(actFORWARD);
+	cola_prioridad.push(hijoForward);
+      }
+    }
+
+    // Tomo el siguiente valor de la cola_prioridad
+    if (!cola_prioridad.empty()){
+      current = cola_prioridad.top();
+      
+    }
+  }
+ 
+  cout << "Terminada la busqueda\n";
+
+  if (current.n.st.fila == destino.fila and current.n.st.columna == destino.columna){
+    cout << "Cargando el plan\n";
+    plan = current.n.secuencia;
+    cout << "Longitud del plan: " << plan.size() << endl;
+    PintaPlan(plan);
+    // ver el plan en el mapa
+    VisualizaPlan(origen, plan);
+    return true;
+  }
+  else {
+    cout << "No encontrado plan\n";
+  }
+
+
+  return false;
 }

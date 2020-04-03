@@ -52,7 +52,7 @@ class ComportamientoJugador : public Comportamiento {
   bool zapatillas = false; 
 
     // Métodos privados de la clase
-    bool pathFinding(int level, const estado &origen, const estado &destino, list<Action> &plan);
+  bool pathFinding(int level, const estado &origen, const estado &destino, list<Action> &plan, Sensores sensores);
     bool pathFinding_Profundidad(const estado &origen, const estado &destino, list<Action> &plan);
 
     void PintaPlan(list<Action> plan);
@@ -60,14 +60,17 @@ class ComportamientoJugador : public Comportamiento {
 
 
   // ------- MÉTODOS DE BÚSQUEDA -------
-  //en anchura
+  // EN ANCHURA
   bool pathFinding_Anchura(const estado &origen, const estado &destino, list<Action> &plan);
 
-  // por coste uniforme
+  // COSTO UNIFORME 
+  bool pathFinding_CostoUniforme(const estado &origen, const estado &destino, list<Action> &plan, Sensores sensores);
+
   // variables auxiliares
   int gastoBateria( char tipoCasilla);
   bool bikiniEquipado(){return bikini;};
   bool zapatillasEquipadas(){ return zapatillas;}
+  
   
 };
 
