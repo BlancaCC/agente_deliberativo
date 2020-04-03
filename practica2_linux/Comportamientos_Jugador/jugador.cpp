@@ -355,12 +355,13 @@ bool ComportamientoJugador::pathFinding_Anchura(const estado &origen, const esta
 struct nodoUniforme {
   nodo n;
   int bateriaGastada;
-
-  //tendrá preferencia en la cola el que menos batería lleve gastada 
-  bool operator<(const nodoUniforme & otroNodo) const
-    {
+ 
+  //tendrá preferencia en la cola el que menos batería lleve gastada
+  
+  bool operator<(const nodoUniforme & otroNodo) const {
         return bateriaGastada > otroNodo.bateriaGastada;
     }
+  
 };
 
 
@@ -400,28 +401,30 @@ bool ComportamientoJugador::pathFinding_CostoUniforme(const estado &origen, cons
   cout << "Calculando plan\n";
   plan.clear();
   set<estado,ComparaEstados> generados; // Lista de Cerrados
-  stack<nodoUniforme> cola_prioridad;		        // Lista de Abiertos
+  priority_queue<nodoUniforme> cola_prioridad;		        // Lista de Abiertos
 
   nodoUniforme current;
   current.n.st = origen;
   current.n.secuencia.empty();
-  current.bateriaGastada = 0; 
+  current.bateriaGastada = 0;
+
 
   cola_prioridad.push(current);
 
-  
+
+ 
   while (!cola_prioridad.empty() and (current.n.st.fila!=destino.fila or current.n.st.columna != destino.columna)){
 
-    cout << " =========== \n Se selecciona padre con batería:  " << current.bateriaGastada << "\n=================================="<<endl; 
     cola_prioridad.pop();
+   
     generados.insert(current.n.st);
 
     // Generar descendiente de girar a la derecha
-    nodoUniforme  hijoTurnR = current;
+    nodoUniforme  hijoTurnR = current;    
     hijoTurnR.n.st.orientacion = (hijoTurnR.n.st.orientacion+1)%4;
     if (generados.find(hijoTurnR.n.st) == generados.end()){
       hijoTurnR.bateriaGastada += gastoBateria( sensores.terreno[0]);
-      cout << "Se anade hijo derecho con bateria " << hijoTurnR.bateriaGastada << endl; 
+     
       hijoTurnR.n.secuencia.push_back(actTURN_R);
       cola_prioridad.push(hijoTurnR);
 
@@ -432,7 +435,7 @@ bool ComportamientoJugador::pathFinding_CostoUniforme(const estado &origen, cons
     hijoTurnL.n.st.orientacion = (hijoTurnL.n.st.orientacion+3)%4;
     if (generados.find(hijoTurnL.n.st) == generados.end()){
       hijoTurnL.bateriaGastada += gastoBateria( sensores.terreno[0]);
-      cout << "Se anade hijo izquierdo  con bateria " << hijoTurnL.bateriaGastada << endl; 
+      
       hijoTurnL.n.secuencia.push_back(actTURN_L);
       cola_prioridad.push(hijoTurnL);
     }
@@ -440,7 +443,6 @@ bool ComportamientoJugador::pathFinding_CostoUniforme(const estado &origen, cons
     // Generar descendiente de avanzar
     nodoUniforme  hijoForward = current;
     hijoForward.bateriaGastada += gastoBateria( sensores.terreno[0]); //(debemos contabilizarlo antes de que avance)
-    cout << "Se anade hijo delante con bateria " << hijoForward.bateriaGastada << endl; 
     if (!HayObstaculoDelante(hijoForward.n.st)){
       if (generados.find(hijoForward.n.st) == generados.end()){
 	hijoForward.n.secuencia.push_back(actFORWARD);
