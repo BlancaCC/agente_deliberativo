@@ -5,7 +5,7 @@
 #include <cmath>
 #include <set>
 #include <stack>
-#include <queue> // std::priority_queue Para el costo uniforme 
+#include <queue> // std::queue para búsqueda en anchura y std::priority_queue Para el costo uniforme 
 
 
 // Este es el método principal que debe contener los 4 Comportamientos_Jugador
@@ -272,61 +272,54 @@ int ComportamientoJugador::interact(Action accion, int valor){
 // Implementación de la búsqueda en anchura.
 // Entran los puntos origen y destino y devuelve la
 // secuencia de acciones en plan, una lista de acciones.
+
 bool ComportamientoJugador::pathFinding_Anchura(const estado &origen, const estado &destino, list<Action> &plan) {
   //Borro la lista
   cout << "Calculando plan\n";
   plan.clear();
   set<estado,ComparaEstados> generados; // Lista de Cerrados
-  stack<nodo> pila_nivel,pila_siguiente_generacion;		        // Lista de Abiertos
+  queue<nodo> cola;		        // Lista de Abiertos
 
   nodo current;
   current.st = origen;
   current.secuencia.empty();
 
-  pila_siguiente_generacion.push(current);
+  cola.push(current);
 
-  while (!pila_siguiente_generacion.empty() and (current.st.fila!=destino.fila or current.st.columna != destino.columna)) {
-    
-    pila_nivel = pila_siguiente_generacion; //exploramos un nivel más profundo
-    
-    pila_siguiente_generacion = stack<nodo>(); // tener cuidado de que esta no borre pila de nivel y que esta orden exista
+  while (!cola.empty() and (current.st.fila!=destino.fila or current.st.columna != destino.columna)){
 
-    // nuestro padre no es pero añadimos a posibles exporaciones sus hijos
-    while (!pila_nivel.empty() and (current.st.fila!=destino.fila or current.st.columna != destino.columna)){
+    cola.pop();
+    generados.insert(current.st);
 
-      pila_nivel.pop();
-      generados.insert(current.st);
+    // Generar descendiente de girar a la derecha
+    nodo hijoTurnR = current;
+    hijoTurnR.st.orientacion = (hijoTurnR.st.orientacion+1)%4;
+    if (generados.find(hijoTurnR.st) == generados.end()){
+      hijoTurnR.secuencia.push_back(actTURN_R);
+      cola.push(hijoTurnR);
 
-      // Generar descendiente de girar a la derecha
-      nodo hijoTurnR = current;
-      hijoTurnR.st.orientacion = (hijoTurnR.st.orientacion+1)%4;
-      if (generados.find(hijoTurnR.st) == generados.end()){
-	hijoTurnR.secuencia.push_back(actTURN_R);
-	pila_siguiente_generacion.push(hijoTurnR);
+    }
 
+    // Generar descendiente de girar a la izquierda
+    nodo hijoTurnL = current;
+    hijoTurnL.st.orientacion = (hijoTurnL.st.orientacion+3)%4;
+    if (generados.find(hijoTurnL.st) == generados.end()){
+      hijoTurnL.secuencia.push_back(actTURN_L);
+      cola.push(hijoTurnL);
+    }
+
+    // Generar descendiente de avanzar
+    nodo hijoForward = current;
+    if (!HayObstaculoDelante(hijoForward.st)){
+      if (generados.find(hijoForward.st) == generados.end()){
+	hijoForward.secuencia.push_back(actFORWARD);
+	cola.push(hijoForward);
       }
+    }
 
-      // Generar descendiente de girar a la izquierda
-      nodo hijoTurnL = current;
-      hijoTurnL.st.orientacion = (hijoTurnL.st.orientacion+3)%4;
-      if (generados.find(hijoTurnL.st) == generados.end()){
-	hijoTurnL.secuencia.push_back(actTURN_L);
-	pila_siguiente_generacion.push(hijoTurnL);
-      }
-
-      // Generar descendiente de avanzar
-      nodo hijoForward = current;
-      if (!HayObstaculoDelante(hijoForward.st)){
-	if (generados.find(hijoForward.st) == generados.end()){
-	  hijoForward.secuencia.push_back(actFORWARD);
-	  pila_siguiente_generacion.push(hijoForward);
-	}
-      }
-
-      // Tomo el siguiente valor de la pila
-      if (!pila_nivel.empty()){
-	current = pila_nivel.top();
-      }
+    // Tomo el siguiente valor de la cola
+    if (!cola.empty()){
+      current = cola.front();
     }
   }
 
