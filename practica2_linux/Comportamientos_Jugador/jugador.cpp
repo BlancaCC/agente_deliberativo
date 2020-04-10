@@ -380,7 +380,9 @@ struct nodoUniforme {
 //sensores.terreno[]; 
 int  ComportamientoJugador::gastoBateria( char tipoCasilla) {
 
-  int gasto = 1; 
+  
+  int gasto = 1;  // gasto por defecto
+  
   switch( tipoCasilla ) {
   case 'A':
     if (bikiniEquipado()) gasto = 10;
@@ -395,11 +397,11 @@ int  ComportamientoJugador::gastoBateria( char tipoCasilla) {
   case 'T':
     gasto = 2;
     break; 
-    
-  
-    return gasto;
   }
-			  
+
+  if (gasto == 10 ) cout << "SE HA COGIDO BIKINI" << endl; 
+  // cout << "Para casilla " << tipoCasilla << " se devuelve " << gasto << endl; 
+  return gasto;			  
 }
 
 
@@ -409,8 +411,8 @@ bool ComportamientoJugador::pathFinding_CostoUniforme(const estado &origen, cons
   //Borro la lista
   cout << "Calculando plan\n";
   plan.clear();
-  set<estado,ComparaEstados> generados; // Lista de Cerrados
-  priority_queue<nodoUniforme> cola_prioridad;		        // Lista de Abiertos
+  set<estado,ComparaEstados> generados;          // Lista de Cerrados
+  priority_queue<nodoUniforme> cola_prioridad;	 // Lista de Abiertos
 
   nodoUniforme current;
   current.n.st = origen;
@@ -427,13 +429,17 @@ bool ComportamientoJugador::pathFinding_CostoUniforme(const estado &origen, cons
     cola_prioridad.pop();
    
     generados.insert(current.n.st);
+    //cout << "--- Se ha seleccionado nodo con gasto " << current.bateriaGastada << "---" <<  endl; 
 
+    int gasto_bateria = gastoBateria( mapaResultado[current.n.st.fila][current.n.st.columna]);
+
+    
     // Generar descendiente de girar a la derecha
     nodoUniforme  hijoTurnR = current;    
     hijoTurnR.n.st.orientacion = (hijoTurnR.n.st.orientacion+1)%4;
     if (generados.find(hijoTurnR.n.st) == generados.end()){
-      hijoTurnR.bateriaGastada += gastoBateria( sensores.terreno[0]);
-     
+      hijoTurnR.bateriaGastada += gasto_bateria;
+      //cout << "Se crea hijo derecho con coste de bateria " << hijoTurnR.bateriaGastada << endl; 
       hijoTurnR.n.secuencia.push_back(actTURN_R);
       cola_prioridad.push(hijoTurnR);
 
@@ -443,17 +449,19 @@ bool ComportamientoJugador::pathFinding_CostoUniforme(const estado &origen, cons
     nodoUniforme  hijoTurnL = current;
     hijoTurnL.n.st.orientacion = (hijoTurnL.n.st.orientacion+3)%4;
     if (generados.find(hijoTurnL.n.st) == generados.end()){
-      hijoTurnL.bateriaGastada += gastoBateria( sensores.terreno[0]);
-      
+      hijoTurnL.bateriaGastada += gasto_bateria; 
+      // cout << "Se crea hijo izquierdo con coste de bateria " << hijoTurnL.bateriaGastada << endl; 
       hijoTurnL.n.secuencia.push_back(actTURN_L);
       cola_prioridad.push(hijoTurnL);
     }
 
     // Generar descendiente de avanzar
     nodoUniforme  hijoForward = current;
-    hijoForward.bateriaGastada += gastoBateria( sensores.terreno[0]); //(debemos contabilizarlo antes de que avance)
-    if (!HayObstaculoDelante(hijoForward.n.st)){
+
+    if (! HayObstaculoDelante(hijoForward.n.st)){
       if (generados.find(hijoForward.n.st) == generados.end()){
+	hijoForward.bateriaGastada += gasto_bateria;
+	//	cout << "S añade hijo de avance  con coste de batería  " << hijoForward.bateriaGastada << endl; 
 	hijoForward.n.secuencia.push_back(actFORWARD);
 	cola_prioridad.push(hijoForward);
       }
