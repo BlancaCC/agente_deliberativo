@@ -45,7 +45,7 @@ class ComportamientoJugador : public Comportamiento {
     int fil, col, brujula;
     estado actual, destino;
     list<Action> plan;
-    bool hayplan;
+  bool hayplan = false; //modificamos este valor para implementar la búsqueda
 
   //añado mis variables
   bool bikini = false;

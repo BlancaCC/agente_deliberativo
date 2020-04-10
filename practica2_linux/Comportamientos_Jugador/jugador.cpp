@@ -13,28 +13,44 @@
 // sensores y devuelve la acción a realizar.
 Action ComportamientoJugador::think(Sensores sensores) {
   Action accion = actIDLE;
+
   // Estoy en el nivel 1
-
-  actual.fila        = sensores.posF;
-  actual.columna     = sensores.posC;
-  actual.orientacion = sensores.sentido;
-
-  cout << "Fila: " << actual.fila << endl;
-  cout << "Col : " << actual.columna << endl;
-  cout << "Ori : " << actual.orientacion << endl;
-
-  destino.fila       = sensores.destinoF;
-  destino.columna    = sensores.destinoC;
-
   if (sensores.nivel != 4){
-    bool hay_plan = pathFinding (sensores.nivel, actual, destino, plan, sensores);
-  }
+    if( !hayplan) {
+      actual.fila        = sensores.posF;
+      actual.columna     = sensores.posC;
+      actual.orientacion = sensores.sentido;
+
+      cout << "Fila: " << actual.fila << endl;
+      cout << "Col : " << actual.columna << endl;
+      cout << "Ori : " << actual.orientacion << endl;
+
+      destino.fila       = sensores.destinoF;
+      destino.columna    = sensores.destinoC;
+
+      hayplan = pathFinding (sensores.nivel, actual, destino, plan, sensores);
+    }
+
+    if( hayplan and plan.size() > 0) {
+      accion = plan.front();
+      plan.erase(plan.begin());
+    }
+    else {
+
+      // aquí entraría si no se ha encontrado un comportamiento o está mal implementado
+      cout << "Plan mal implementado o no se ha encontrado " << endl;
+    }
+       
+  }   
+      
+      
+
   else {
     // Estoy en el nivel 2
     cout << "Aún no implementado el nivel 2" << endl;
   }
 
-  return accion;
+return accion;
 }
 
 
