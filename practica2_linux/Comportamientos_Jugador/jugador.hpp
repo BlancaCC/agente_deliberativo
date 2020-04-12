@@ -11,6 +11,16 @@ struct estado {
   int orientacion;
 };
 
+/* Actualiza el mapa actual, 
+bloque es la tanda de sensor terreno a añadir 0  [0], 1[1,3], [4,8],[9,15] {0,1,2,3}
+inicio es la casilla primera  a analizar {0,1,4,9}ç
+
+EL O NO LO CALCULA
+ */
+
+
+int distanciaManhattan( int destinoF, int destinoC, int posF, int posC);
+
 class ComportamientoJugador : public Comportamiento {
   public:
     ComportamientoJugador(unsigned int size) : Comportamiento(size) {
@@ -52,7 +62,7 @@ class ComportamientoJugador : public Comportamiento {
   bool zapatillas = false; 
 
     // Métodos privados de la clase
-  bool pathFinding(int level, const estado &origen, const estado &destino, list<Action> &plan, Sensores sensores);
+  bool pathFinding(int level, const estado &origen, const estado &destino, list<Action> &plan);
     bool pathFinding_Profundidad(const estado &origen, const estado &destino, list<Action> &plan);
 
     void PintaPlan(list<Action> plan);
@@ -64,14 +74,20 @@ class ComportamientoJugador : public Comportamiento {
   bool pathFinding_Anchura(const estado &origen, const estado &destino, list<Action> &plan);
 
   // COSTO UNIFORME 
-  bool pathFinding_CostoUniforme(const estado &origen, const estado &destino, list<Action> &plan, Sensores sensores);
+  bool pathFinding_CostoUniforme(const estado &origen, const estado &destino, list<Action> &plan);
 
   // variables auxiliares
   int gastoBateria( char tipoCasilla);
   bool bikiniEquipado(){return bikini;};
   bool zapatillasEquipadas(){ return zapatillas;}
-  
-  
+
+  // ===============  NIVEL 2 ============
+  bool pathFinding_Nivel2(const estado &origen, const estado &destino, list<Action> &plan, Sensores & sensores);
+  int girosInicio = 0; //si estamos al inicio del juego
+  Action ultima_accion = actIDLE; 
+  int limiteMapaf, limiteMapac;
+  int destinoF_ant, destinoC_ant; 
+  bool actualizaMapa( int bloque, int inicio, Sensores & sensores);
 };
 
 #endif

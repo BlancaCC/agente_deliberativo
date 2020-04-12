@@ -2,7 +2,7 @@
 #include "motorlib/util.h"
 
 #include <iostream>
-#include <cmath>
+#include <cmath> // stl::abs
 #include <set>
 #include <stack>
 #include <queue> // std::queue para búsqueda en anchura y std::priority_queue Para el costo uniforme 
@@ -17,18 +17,20 @@ Action ComportamientoJugador::think(Sensores sensores) {
   // Estoy en el nivel 1
   if (sensores.nivel != 4){
     if( !hayplan) {
+  
       actual.fila        = sensores.posF;
       actual.columna     = sensores.posC;
       actual.orientacion = sensores.sentido;
+
+      destino.fila       = sensores.destinoF;
+      destino.columna    = sensores.destinoC;
 
       cout << "Fila: " << actual.fila << endl;
       cout << "Col : " << actual.columna << endl;
       cout << "Ori : " << actual.orientacion << endl;
 
-      destino.fila       = sensores.destinoF;
-      destino.columna    = sensores.destinoC;
 
-      hayplan = pathFinding (sensores.nivel, actual, destino, plan, sensores);
+      hayplan = pathFinding (sensores.nivel, actual, destino, plan);
     }
 
     if( hayplan and plan.size() > 0) {
@@ -39,15 +41,78 @@ Action ComportamientoJugador::think(Sensores sensores) {
 
       // aquí entraría si no se ha encontrado un comportamiento o está mal implementado
       cout << "Plan mal implementado o no se ha encontrado " << endl;
+
     }
        
   }   
       
-      
-
   else {
     // Estoy en el nivel 2
-    cout << "Aún no implementado el nivel 2" << endl;
+
+    // RECALUCULAMOS TODO  
+    actual.fila        = sensores.posF;
+    actual.columna     = sensores.posC;
+    actual.orientacion = sensores.sentido;
+
+    destino.fila       = sensores.destinoF;
+    destino.columna    = sensores.destinoC;
+
+    if(girosInicio <4) {
+
+	if(girosInicio == 0){
+	  limiteMapaf = mapaResultado.size();
+	  limiteMapac = mapaResultado[0].size();
+	   actualizaMapa(0,0, sensores);
+	   
+	}
+	
+	actualizaMapa(1,1, sensores);
+	actualizaMapa(2,4, sensores);
+	actualizaMapa(3,9, sensores);
+	
+      accion = actTURN_R;
+      girosInicio++; 
+      }
+	  
+    // }
+    //cout << "Aún no implementado el nivel 2" << endl;
+    else if(! (hayplan and destinoF_ant == destino.fila and destinoC_ant == destino.columna )) {
+      destinoF_ant = destino.fila;
+      destinoC_ant = destino.columna; 
+
+      cout << "Fila: " << actual.fila << endl;
+      cout << "Col : " << actual.columna << endl;
+      cout << "Ori : " << actual.orientacion << endl;
+
+      hayplan = pathFinding_Nivel2 (actual,destino,plan, sensores);
+    }
+    if( hayplan and plan.size() > 0) {
+
+      //actualizamos mapa con la accion pasada
+      switch( ultima_accion ) {
+      case actIDLE:
+	
+	break;
+      case actFORWARD:
+	actualizaMapa(3,9, sensores);
+	
+	break;
+      default:
+
+	
+	actualizaMapa(1,1, sensores);
+	actualizaMapa(2,4, sensores);
+	actualizaMapa(3,9, sensores);
+	break;
+      }
+      accion = plan.front();
+      ultima_accion = accion; 
+      plan.erase(plan.begin());
+
+      if (plan.empty()) {	
+	hayplan = false;
+      }
+    }
   }
 
 return accion;
@@ -56,7 +121,7 @@ return accion;
 
 // Llama al algoritmo de busqueda que se usará en cada comportamiento del agente
 // Level representa el comportamiento en el que fue iniciado el agente.
-bool ComportamientoJugador::pathFinding (int level, const estado &origen, const estado &destino, list<Action> &plan, Sensores sensores){
+bool ComportamientoJugador::pathFinding (int level, const estado &origen, const estado &destino, list<Action> &plan){
   switch (level){
   case 1: cout << "Busqueda en profundad\n";
     return pathFinding_Profundidad(origen,destino,plan);
@@ -68,7 +133,7 @@ bool ComportamientoJugador::pathFinding (int level, const estado &origen, const 
   case 3: cout << "Busqueda Costo Uniforme\n";
     // Incluir aqui la llamada al busqueda de costo uniforme
     
-    return pathFinding_CostoUniforme(origen, destino, plan, sensores);
+    return pathFinding_CostoUniforme(origen, destino, plan);
     break;
   case 4: cout << "Busqueda para el reto\n";
     // Incluir aqui la llamada al algoritmo de búsqueda usado en el nivel 2
@@ -407,7 +472,7 @@ int  ComportamientoJugador::gastoBateria( char tipoCasilla) {
 
 // Implementación del algoritmo de búsqueda de costo uniforme
 
-bool ComportamientoJugador::pathFinding_CostoUniforme(const estado &origen, const estado &destino, list<Action> &plan, Sensores sensores) {
+bool ComportamientoJugador::pathFinding_CostoUniforme(const estado &origen, const estado &destino, list<Action> &plan) {
   //Borro la lista
   cout << "Calculando plan\n";
   plan.clear();
@@ -491,4 +556,188 @@ bool ComportamientoJugador::pathFinding_CostoUniforme(const estado &origen, cons
 
 
   return false;
+}
+
+
+// ==================== NIVEL 2 ==========================
+
+
+int distanciaManhattan( int destinoF, int destinoC, int posF, int posC) {
+  return  abs(destinoF - posF) + abs(destinoC - posC); 
+}
+
+
+struct nodoNivel2 {
+  nodo n;
+  int bateria, distancia; 
+  float prioridad;
+ 
+  //tendrá preferencia en la cola el que menos batería lleve gastada
+  
+  bool operator<(const nodoNivel2 & otroNodo) const {
+    return prioridad > otroNodo.prioridad || (prioridad == otroNodo.prioridad && bateria > otroNodo.bateria);
+    }
+  
+};
+
+float calculaPrioridad ( nodoNivel2 & n, int destinoF, int destinoC) {
+
+  int dist = distanciaManhattan(destinoF, destinoC, n.n.st.fila, n.n.st.columna)*2;
+  
+}
+
+bool ComportamientoJugador::pathFinding_Nivel2(const estado &origen, const estado &destino, list<Action> &plan, Sensores & sensores) {
+  //Borro la lista
+  cout << "Calculando plan\n";
+  plan.clear();
+  set<estado,ComparaEstados> generados;          // Lista de Cerrados
+  priority_queue<nodoUniforme> cola_prioridad;	 // Lista de Abiertos
+
+  nodoUniforme current;
+  current.n.st = origen;
+  current.n.secuencia.empty();
+  current.bateriaGastada = 0;
+
+
+  cola_prioridad.push(current);
+
+
+ 
+  while (!cola_prioridad.empty() and (current.n.st.fila!=destino.fila or current.n.st.columna != destino.columna)){
+
+    cola_prioridad.pop();
+   
+    generados.insert(current.n.st);
+    //AQUÍ ESTOY CAMBIANDO MAPAreSULTADO 
+    //mapaResultado[sensores.posF][]
+      
+    //cout << "--- Se ha seleccionado nodo con gasto " << current.bateriaGastada << "---" <<  endl; 
+
+    //int gasto_bateria = gastoBateria( mapaResultado[current.n.st.fila][current.n.st.columna]);
+    //int gasto_bateria = distanciaManhattan(destino.fila, destino.columna,
+    // hijoTurn.n.st.fila, hijoTurn.n.st.columna); 
+    
+    // Generar descendiente de girar a la derecha
+    
+    nodoUniforme  hijoTurnR = current;    
+    hijoTurnR.n.st.orientacion = (hijoTurnR.n.st.orientacion+1)%4;
+    if (generados.find(hijoTurnR.n.st) == generados.end()){
+      hijoTurnR.bateriaGastada += distanciaManhattan(destino.fila, destino.columna,
+					   hijoTurnR.n.st.fila, hijoTurnR.n.st.columna); 
+      //cout << "Se crea hijo derecho con coste de bateria " << hijoTurnR.bateriaGastada << endl; 
+      hijoTurnR.n.secuencia.push_back(actTURN_R);
+      cola_prioridad.push(hijoTurnR);
+
+    }
+
+    // Generar descendiente de girar a la izquierda
+    nodoUniforme  hijoTurnL = current;
+    hijoTurnL.n.st.orientacion = (hijoTurnL.n.st.orientacion+3)%4;
+    if (generados.find(hijoTurnL.n.st) == generados.end()){
+      hijoTurnL.bateriaGastada += distanciaManhattan(destino.fila, destino.columna,
+					   hijoTurnL.n.st.fila, hijoTurnL.n.st.columna); 
+      // cout << "Se crea hijo izquierdo con coste de bateria " << hijoTurnL.bateriaGastada << endl; 
+      hijoTurnL.n.secuencia.push_back(actTURN_L);
+      cola_prioridad.push(hijoTurnL);
+    }
+
+    // Generar descendiente de avanzar
+    nodoUniforme  hijoForward = current;
+
+    if (! HayObstaculoDelante(hijoForward.n.st)){
+      if (generados.find(hijoForward.n.st) == generados.end()){
+	hijoForward.bateriaGastada += distanciaManhattan(destino.fila, destino.columna,
+					   hijoForward.n.st.fila, hijoForward.n.st.columna); ;
+	//	cout << "S añade hijo de avance  con coste de batería  " << hijoForward.bateriaGastada << endl; 
+	hijoForward.n.secuencia.push_back(actFORWARD);
+	cola_prioridad.push(hijoForward);
+      }
+    }
+
+    // Tomo el siguiente valor de la cola_prioridad
+    if (!cola_prioridad.empty()){
+      current = cola_prioridad.top();
+      
+    }
+  }
+ 
+  cout << "Terminada la busqueda\n";
+
+  if (current.n.st.fila == destino.fila and current.n.st.columna == destino.columna){
+    cout << "Cargando el plan\n";
+    plan = current.n.secuencia;
+    cout << "Longitud del plan: " << plan.size() << endl;
+    PintaPlan(plan);
+    // ver el plan en el mapa
+    VisualizaPlan(origen, plan);
+    return true;
+  }
+  else {
+    cout << "No encontrado plan\n";
+  }
+
+
+  return false;
+}
+
+
+bool ComportamientoJugador::actualizaMapa ( int bloque , int inicio, Sensores & sensores ){
+
+  bool salida = true;
+  
+  // nos colocamos en el principio del tablero a actualizar
+  int f = actual.fila;
+  int c = actual.columna; // columna icial de la que se parte
+  int addf = 0,addc = 0;
+
+  
+
+  switch(actual.orientacion) {
+  case norte:
+    f -= bloque;
+    c -= bloque;
+    addc = 1;
+
+    break;
+
+  case sur:
+    f += bloque;
+    c += bloque;
+    addc = -1;
+
+    break;
+
+  case oeste:
+    f += bloque;
+    c -= bloque;
+    addf = -1;
+
+    break;
+
+  case este:
+    f -= bloque;
+    c += bloque;
+    addf = 1;
+
+    break;
+
+
+  }
+
+  
+  for( int i=0; i< bloque*2+1; i++) {
+    if(f >= 0 and c >=0 and f < limiteMapaf and c < limiteMapac) {
+      mapaResultado[f][c] = sensores.terreno[inicio++];
+     
+    }   
+    else {
+      salida = false;
+     
+    }
+    cout << "  f= " << f <<  "  c = " << c << endl ; 
+    f+=addf;
+    c+=addc;
+  }
+  return salida; 
+  
 }
