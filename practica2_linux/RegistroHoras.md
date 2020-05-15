@@ -12,3 +12,4 @@ Tiempo | Acumulada | Descripción | Fecha
   3 h | 10 h | Corrijo fallos de la uniforme | 10-04-20  
   2 h | 12 h | empiezo a pensar diseño del nivel 3 | 11-04-20  
   3 h | 15 h | más diseño y consigo que dibuje el mapa y siga la búsqueda unirme (esta no es la correcta ya que no reajusta la búsqueda  | 12-04-20  
+  1,5 | 16.5  | recordar lo que habú hecho | 15-05-20  

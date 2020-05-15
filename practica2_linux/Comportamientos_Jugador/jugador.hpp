@@ -88,6 +88,31 @@ class ComportamientoJugador : public Comportamiento {
   int limiteMapaf, limiteMapac;
   int destinoF_ant, destinoC_ant; 
   bool actualizaMapa( int bloque, int inicio, Sensores & sensores);
-};
+
+  //variables para estimación del predominio terreno
+  int cnt_pasos = 0; //contador de pasos dados
+  //contadores de tipos de casilla:
+  int cnt_s =0;
+  int cnt_t =0; //tierra gasto 2
+  int cnt_b =0; //bosque gasto 50
+  int cnt_a =0; //aguas gasto 100
+
+  /* vector de prioridades, estas son: (cuanto menor sea el número mayor será la prioridad:
+     - ahorro_bateria
+     - destino final
+     - coger bañador
+     - coger zapatillas
+    
+   */
+  int pesosPrioridad[]= {1,1,2,2};
+
+  enum tiposPrioridades {BATERIA, DESTINO, BIKINI, ZAPATILLAS};
+  void reajustaPrioridadBasadoContadores();
+  void reajustaPriorudadBasadoMapa();
+  /**
+     Intenta generar un hijo si es posible
+     true si lo ha generado
+   */
+  int VENTANA = 5; 
 
 #endif

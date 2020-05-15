@@ -1,0 +1,1554 @@
+En el fichero incluido desde /usr/include/features.h:465,
+                 desde /usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 desde /usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/c++config.h:524,
+                 desde /usr/include/c++/9.3.0/bits/stl_algobase.h:59,
+                 desde /usr/include/c++/9.3.0/vector:60,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/include/comportamientos/comportamiento.hpp:4,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/../Comportamientos_Jugador/jugador.hpp:4,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:1:
+/usr/include/stdlib.h:33:1: error: expected unqualified-id before string constant
+   33 | __BEGIN_DECLS
+      | ^~~~~~~~~~~~~
+En el fichero incluido desde /usr/include/c++/9.3.0/cstdlib:77,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/include/motorlib/util.h:4,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:2:
+/usr/include/c++/9.3.0/bits/std_abs.h:46:8: error: expected unqualified-id before string constant
+   46 | extern "C++"
+      |        ^~~~~
+En el fichero incluido desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/include/motorlib/util.h:4,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:2:
+/usr/include/c++/9.3.0/cstdlib:121:8: error: expected unqualified-id before string constant
+  121 | extern "C++"
+      |        ^~~~~
+En el fichero incluido desde /usr/include/c++/9.3.0/iosfwd:39,
+                 desde /usr/include/c++/9.3.0/ios:38,
+                 desde /usr/include/c++/9.3.0/ostream:38,
+                 desde /usr/include/c++/9.3.0/iostream:39,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:4:
+/usr/include/c++/9.3.0/bits/stringfwd.h:42:1: error: expected unqualified-id before ‘namespace’
+   42 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+En el fichero incluido desde /usr/include/features.h:465,
+                 desde /usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 desde /usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/c++config.h:524,
+                 desde /usr/include/c++/9.3.0/bits/stl_algobase.h:59,
+                 desde /usr/include/c++/9.3.0/vector:60,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/include/comportamientos/comportamiento.hpp:4,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/../Comportamientos_Jugador/jugador.hpp:4,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:1:
+/usr/include/wchar.h:79:1: error: expected unqualified-id before string constant
+   79 | __BEGIN_DECLS
+      | ^~~~~~~~~~~~~
+En el fichero incluido desde /usr/include/c++/9.3.0/bits/postypes.h:40,
+                 desde /usr/include/c++/9.3.0/iosfwd:40,
+                 desde /usr/include/c++/9.3.0/ios:38,
+                 desde /usr/include/c++/9.3.0/ostream:38,
+                 desde /usr/include/c++/9.3.0/iostream:39,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:4:
+/usr/include/c++/9.3.0/cwchar:62:1: error: expected unqualified-id before ‘namespace’
+   62 | namespace std
+      | ^~~~~~~~~
+/usr/include/c++/9.3.0/cwchar:135:8: error: expected unqualified-id before string constant
+  135 | extern "C++"
+      |        ^~~~~
+/usr/include/c++/9.3.0/cwchar:244:1: error: expected unqualified-id before ‘namespace’
+  244 | namespace __gnu_cxx
+      | ^~~~~~~~~
+/usr/include/c++/9.3.0/cwchar:265:1: error: expected unqualified-id before ‘namespace’
+  265 | namespace std
+      | ^~~~~~~~~
+/usr/include/c++/9.3.0/cwchar:280:1: error: expected unqualified-id before ‘namespace’
+  280 | namespace std
+      | ^~~~~~~~~
+En el fichero incluido desde /usr/include/c++/9.3.0/iosfwd:40,
+                 desde /usr/include/c++/9.3.0/ios:38,
+                 desde /usr/include/c++/9.3.0/ostream:38,
+                 desde /usr/include/c++/9.3.0/iostream:39,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:4:
+/usr/include/c++/9.3.0/bits/postypes.h:68:1: error: expected unqualified-id before ‘namespace’
+   68 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+En el fichero incluido desde /usr/include/c++/9.3.0/ios:38,
+                 desde /usr/include/c++/9.3.0/ostream:38,
+                 desde /usr/include/c++/9.3.0/iostream:39,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:4:
+/usr/include/c++/9.3.0/iosfwd:42:1: error: expected unqualified-id before ‘namespace’
+   42 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+En el fichero incluido desde /usr/include/c++/9.3.0/ios:40,
+                 desde /usr/include/c++/9.3.0/ostream:38,
+                 desde /usr/include/c++/9.3.0/iostream:39,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:4:
+/usr/include/c++/9.3.0/bits/char_traits.h:47:1: error: expected unqualified-id before ‘namespace’
+   47 | namespace __gnu_cxx _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+/usr/include/c++/9.3.0/bits/char_traits.h:215:1: error: expected unqualified-id before ‘namespace’
+  215 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+En el fichero incluido desde /usr/include/stdint.h:37,
+                 desde /usr/lib/gcc/x86_64-pc-linux-gnu/9.3.0/include/stdint.h:9,
+                 desde /usr/include/c++/9.3.0/cstdint:41,
+                 desde /usr/include/c++/9.3.0/bits/char_traits.h:621,
+                 desde /usr/include/c++/9.3.0/ios:40,
+                 desde /usr/include/c++/9.3.0/ostream:38,
+                 desde /usr/include/c++/9.3.0/iostream:39,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:4:
+/usr/include/bits/stdint-uintn.h:24:9: error: ‘__uint8_t’ does not name a type; did you mean ‘__uint128_t’?
+   24 | typedef __uint8_t uint8_t;
+      |         ^~~~~~~~~
+      |         __uint128_t
+/usr/include/bits/stdint-uintn.h:25:9: error: ‘__uint16_t’ does not name a type; did you mean ‘__uint128_t’?
+   25 | typedef __uint16_t uint16_t;
+      |         ^~~~~~~~~~
+      |         __uint128_t
+/usr/include/bits/stdint-uintn.h:26:9: error: ‘__uint32_t’ does not name a type; did you mean ‘__uint128_t’?
+   26 | typedef __uint32_t uint32_t;
+      |         ^~~~~~~~~~
+      |         __uint128_t
+/usr/include/bits/stdint-uintn.h:27:9: error: ‘__uint64_t’ does not name a type; did you mean ‘__uint128_t’?
+   27 | typedef __uint64_t uint64_t;
+      |         ^~~~~~~~~~
+      |         __uint128_t
+En el fichero incluido desde /usr/lib/gcc/x86_64-pc-linux-gnu/9.3.0/include/stdint.h:9,
+                 desde /usr/include/c++/9.3.0/cstdint:41,
+                 desde /usr/include/c++/9.3.0/bits/char_traits.h:621,
+                 desde /usr/include/c++/9.3.0/ios:40,
+                 desde /usr/include/c++/9.3.0/ostream:38,
+                 desde /usr/include/c++/9.3.0/iostream:39,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:4:
+/usr/include/stdint.h:43:9: error: ‘__int_least8_t’ no nombra a un tipo
+   43 | typedef __int_least8_t int_least8_t;
+      |         ^~~~~~~~~~~~~~
+/usr/include/stdint.h:44:9: error: ‘__int_least16_t’ no nombra a un tipo
+   44 | typedef __int_least16_t int_least16_t;
+      |         ^~~~~~~~~~~~~~~
+/usr/include/stdint.h:45:9: error: ‘__int_least32_t’ no nombra a un tipo
+   45 | typedef __int_least32_t int_least32_t;
+      |         ^~~~~~~~~~~~~~~
+/usr/include/stdint.h:46:9: error: ‘__int_least64_t’ no nombra a un tipo
+   46 | typedef __int_least64_t int_least64_t;
+      |         ^~~~~~~~~~~~~~~
+/usr/include/stdint.h:49:9: error: ‘__uint_least8_t’ no nombra a un tipo
+   49 | typedef __uint_least8_t uint_least8_t;
+      |         ^~~~~~~~~~~~~~~
+/usr/include/stdint.h:50:9: error: ‘__uint_least16_t’ no nombra a un tipo
+   50 | typedef __uint_least16_t uint_least16_t;
+      |         ^~~~~~~~~~~~~~~~
+/usr/include/stdint.h:51:9: error: ‘__uint_least32_t’ no nombra a un tipo
+   51 | typedef __uint_least32_t uint_least32_t;
+      |         ^~~~~~~~~~~~~~~~
+/usr/include/stdint.h:52:9: error: ‘__uint_least64_t’ no nombra a un tipo
+   52 | typedef __uint_least64_t uint_least64_t;
+      |         ^~~~~~~~~~~~~~~~
+/usr/include/stdint.h:101:9: error: ‘__intmax_t’ does not name a type; did you mean ‘__int128_t’?
+  101 | typedef __intmax_t  intmax_t;
+      |         ^~~~~~~~~~
+      |         __int128_t
+/usr/include/stdint.h:102:9: error: ‘__uintmax_t’ does not name a type; did you mean ‘__uint128_t’?
+  102 | typedef __uintmax_t  uintmax_t;
+      |         ^~~~~~~~~~~
+      |         __uint128_t
+En el fichero incluido desde /usr/include/c++/9.3.0/bits/char_traits.h:621,
+                 desde /usr/include/c++/9.3.0/ios:40,
+                 desde /usr/include/c++/9.3.0/ostream:38,
+                 desde /usr/include/c++/9.3.0/iostream:39,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:4:
+/usr/include/c++/9.3.0/cstdint:44:1: error: expected unqualified-id before ‘namespace’
+   44 | namespace std
+      | ^~~~~~~~~
+En el fichero incluido desde /usr/include/c++/9.3.0/ios:40,
+                 desde /usr/include/c++/9.3.0/ostream:38,
+                 desde /usr/include/c++/9.3.0/iostream:39,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:4:
+/usr/include/c++/9.3.0/bits/char_traits.h:623:1: error: expected unqualified-id before ‘namespace’
+  623 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+En el fichero incluido desde /usr/include/features.h:465,
+                 desde /usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 desde /usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/c++config.h:524,
+                 desde /usr/include/c++/9.3.0/bits/stl_algobase.h:59,
+                 desde /usr/include/c++/9.3.0/vector:60,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/include/comportamientos/comportamiento.hpp:4,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/../Comportamientos_Jugador/jugador.hpp:4,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:1:
+/usr/include/locale.h:31:1: error: expected unqualified-id before string constant
+   31 | __BEGIN_DECLS
+      | ^~~~~~~~~~~~~
+En el fichero incluido desde /usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/c++locale.h:41,
+                 desde /usr/include/c++/9.3.0/bits/localefwd.h:40,
+                 desde /usr/include/c++/9.3.0/ios:41,
+                 desde /usr/include/c++/9.3.0/ostream:38,
+                 desde /usr/include/c++/9.3.0/iostream:39,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:4:
+/usr/include/c++/9.3.0/clocale:51:1: error: expected unqualified-id before ‘namespace’
+   51 | namespace std
+      | ^~~~~~~~~
+En el fichero incluido desde /usr/include/c++/9.3.0/bits/localefwd.h:40,
+                 desde /usr/include/c++/9.3.0/ios:41,
+                 desde /usr/include/c++/9.3.0/ostream:38,
+                 desde /usr/include/c++/9.3.0/iostream:39,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:4:
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/c++locale.h:48:1: error: expected unqualified-id before ‘namespace’
+   48 | namespace __gnu_cxx _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/c++locale.h:58:1: error: expected unqualified-id before ‘namespace’
+   58 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+En el fichero incluido desde /usr/include/features.h:465,
+                 desde /usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 desde /usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/c++config.h:524,
+                 desde /usr/include/c++/9.3.0/bits/stl_algobase.h:59,
+                 desde /usr/include/c++/9.3.0/vector:60,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/include/comportamientos/comportamiento.hpp:4,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/../Comportamientos_Jugador/jugador.hpp:4,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:1:
+/usr/include/ctype.h:28:1: error: expected unqualified-id before string constant
+   28 | __BEGIN_DECLS
+      | ^~~~~~~~~~~~~
+En el fichero incluido desde /usr/include/c++/9.3.0/bits/localefwd.h:42,
+                 desde /usr/include/c++/9.3.0/ios:41,
+                 desde /usr/include/c++/9.3.0/ostream:38,
+                 desde /usr/include/c++/9.3.0/iostream:39,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:4:
+/usr/include/c++/9.3.0/cctype:62:1: error: expected unqualified-id before ‘namespace’
+   62 | namespace std
+      | ^~~~~~~~~
+/usr/include/c++/9.3.0/cctype:85:1: error: expected unqualified-id before ‘namespace’
+   85 | namespace std
+      | ^~~~~~~~~
+En el fichero incluido desde /usr/include/c++/9.3.0/ios:41,
+                 desde /usr/include/c++/9.3.0/ostream:38,
+                 desde /usr/include/c++/9.3.0/iostream:39,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:4:
+/usr/include/c++/9.3.0/bits/localefwd.h:44:1: error: expected unqualified-id before ‘namespace’
+   44 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+En el fichero incluido desde /usr/include/features.h:465,
+                 desde /usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 desde /usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/c++config.h:524,
+                 desde /usr/include/c++/9.3.0/bits/stl_algobase.h:59,
+                 desde /usr/include/c++/9.3.0/vector:60,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/include/comportamientos/comportamiento.hpp:4,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/../Comportamientos_Jugador/jugador.hpp:4,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:1:
+/usr/include/bits/sched.h:78:1: error: expected unqualified-id before string constant
+   78 | __BEGIN_DECLS
+      | ^~~~~~~~~~~~~
+/usr/include/bits/cpu-set.h:115:1: error: expected unqualified-id before string constant
+  115 | __BEGIN_DECLS
+      | ^~~~~~~~~~~~~
+/usr/include/sched.h:51:1: error: expected unqualified-id before string constant
+   51 | __BEGIN_DECLS
+      | ^~~~~~~~~~~~~
+En el fichero incluido desde /usr/include/bits/time.h:73,
+                 desde /usr/include/time.h:33,
+                 desde /usr/include/pthread.h:23,
+                 desde /usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:35,
+                 desde /usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr.h:148,
+                 desde /usr/include/c++/9.3.0/ext/atomicity.h:35,
+                 desde /usr/include/c++/9.3.0/bits/ios_base.h:39,
+                 desde /usr/include/c++/9.3.0/ios:42,
+                 desde /usr/include/c++/9.3.0/ostream:38,
+                 desde /usr/include/c++/9.3.0/iostream:39,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:4:
+/usr/include/bits/timex.h:29:3: error: ‘__syscall_slong_t’ no nombra a un tipo
+   29 |   __syscall_slong_t offset; /* time offset (usec) */
+      |   ^~~~~~~~~~~~~~~~~
+/usr/include/bits/timex.h:30:3: error: ‘__syscall_slong_t’ no nombra a un tipo
+   30 |   __syscall_slong_t freq; /* frequency offset (scaled ppm) */
+      |   ^~~~~~~~~~~~~~~~~
+/usr/include/bits/timex.h:31:3: error: ‘__syscall_slong_t’ no nombra a un tipo
+   31 |   __syscall_slong_t maxerror; /* maximum error (usec) */
+      |   ^~~~~~~~~~~~~~~~~
+/usr/include/bits/timex.h:32:3: error: ‘__syscall_slong_t’ no nombra a un tipo
+   32 |   __syscall_slong_t esterror; /* estimated error (usec) */
+      |   ^~~~~~~~~~~~~~~~~
+/usr/include/bits/timex.h:34:3: error: ‘__syscall_slong_t’ no nombra a un tipo
+   34 |   __syscall_slong_t constant; /* pll time constant */
+      |   ^~~~~~~~~~~~~~~~~
+/usr/include/bits/timex.h:35:3: error: ‘__syscall_slong_t’ no nombra a un tipo
+   35 |   __syscall_slong_t precision; /* clock precision (usec) (ro) */
+      |   ^~~~~~~~~~~~~~~~~
+/usr/include/bits/timex.h:36:3: error: ‘__syscall_slong_t’ no nombra a un tipo
+   36 |   __syscall_slong_t tolerance; /* clock frequency tolerance (ppm) (ro) */
+      |   ^~~~~~~~~~~~~~~~~
+/usr/include/bits/timex.h:37:18: error: field ‘time’ has incomplete type ‘timeval’
+   37 |   struct timeval time;  /* (read only, except for ADJ_SETOFFSET) */
+      |                  ^~~~
+/usr/include/bits/timex.h:37:10: nota: forward declaration of ‘struct timeval’
+   37 |   struct timeval time;  /* (read only, except for ADJ_SETOFFSET) */
+      |          ^~~~~~~
+/usr/include/bits/timex.h:38:3: error: ‘__syscall_slong_t’ no nombra a un tipo
+   38 |   __syscall_slong_t tick; /* (modified) usecs between clock ticks */
+      |   ^~~~~~~~~~~~~~~~~
+/usr/include/bits/timex.h:39:3: error: ‘__syscall_slong_t’ no nombra a un tipo
+   39 |   __syscall_slong_t ppsfreq; /* pps frequency (scaled ppm) (ro) */
+      |   ^~~~~~~~~~~~~~~~~
+/usr/include/bits/timex.h:40:3: error: ‘__syscall_slong_t’ no nombra a un tipo
+   40 |   __syscall_slong_t jitter; /* pps jitter (us) (ro) */
+      |   ^~~~~~~~~~~~~~~~~
+/usr/include/bits/timex.h:42:3: error: ‘__syscall_slong_t’ no nombra a un tipo
+   42 |   __syscall_slong_t stabil; /* pps stability (scaled ppm) (ro) */
+      |   ^~~~~~~~~~~~~~~~~
+/usr/include/bits/timex.h:43:3: error: ‘__syscall_slong_t’ no nombra a un tipo
+   43 |   __syscall_slong_t jitcnt; /* jitter limit exceeded (ro) */
+      |   ^~~~~~~~~~~~~~~~~
+/usr/include/bits/timex.h:44:3: error: ‘__syscall_slong_t’ no nombra a un tipo
+   44 |   __syscall_slong_t calcnt; /* calibration intervals (ro) */
+      |   ^~~~~~~~~~~~~~~~~
+/usr/include/bits/timex.h:45:3: error: ‘__syscall_slong_t’ no nombra a un tipo
+   45 |   __syscall_slong_t errcnt; /* calibration errors (ro) */
+      |   ^~~~~~~~~~~~~~~~~
+/usr/include/bits/timex.h:46:3: error: ‘__syscall_slong_t’ no nombra a un tipo
+   46 |   __syscall_slong_t stbcnt; /* stability limit exceeded (ro) */
+      |   ^~~~~~~~~~~~~~~~~
+En el fichero incluido desde /usr/include/features.h:465,
+                 desde /usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 desde /usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/c++config.h:524,
+                 desde /usr/include/c++/9.3.0/bits/stl_algobase.h:59,
+                 desde /usr/include/c++/9.3.0/vector:60,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/include/comportamientos/comportamiento.hpp:4,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/../Comportamientos_Jugador/jugador.hpp:4,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:1:
+/usr/include/bits/time.h:75:1: error: expected unqualified-id before string constant
+   75 | __BEGIN_DECLS
+      | ^~~~~~~~~~~~~
+En el fichero incluido desde /usr/include/time.h:48,
+                 desde /usr/include/pthread.h:23,
+                 desde /usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:35,
+                 desde /usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr.h:148,
+                 desde /usr/include/c++/9.3.0/ext/atomicity.h:35,
+                 desde /usr/include/c++/9.3.0/bits/ios_base.h:39,
+                 desde /usr/include/c++/9.3.0/ios:42,
+                 desde /usr/include/c++/9.3.0/ostream:38,
+                 desde /usr/include/c++/9.3.0/iostream:39,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:4:
+/usr/include/bits/types/struct_itimerspec.h:10:21: error: field ‘it_interval’ has incomplete type ‘timespec’
+   10 |     struct timespec it_interval;
+      |                     ^~~~~~~~~~~
+/usr/include/bits/types/struct_itimerspec.h:10:12: nota: forward declaration of ‘struct timespec’
+   10 |     struct timespec it_interval;
+      |            ^~~~~~~~
+/usr/include/bits/types/struct_itimerspec.h:11:21: error: field ‘it_value’ has incomplete type ‘timespec’
+   11 |     struct timespec it_value;
+      |                     ^~~~~~~~
+/usr/include/bits/types/struct_itimerspec.h:10:12: nota: forward declaration of ‘struct timespec’
+   10 |     struct timespec it_interval;
+      |            ^~~~~~~~
+En el fichero incluido desde /usr/include/features.h:465,
+                 desde /usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 desde /usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/c++config.h:524,
+                 desde /usr/include/c++/9.3.0/bits/stl_algobase.h:59,
+                 desde /usr/include/c++/9.3.0/vector:60,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/include/comportamientos/comportamiento.hpp:4,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/../Comportamientos_Jugador/jugador.hpp:4,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:1:
+/usr/include/time.h:68:1: error: expected unqualified-id before string constant
+   68 | __BEGIN_DECLS
+      | ^~~~~~~~~~~~~
+/usr/include/pthread.h:193:1: error: expected unqualified-id before string constant
+  193 | __BEGIN_DECLS
+      | ^~~~~~~~~~~~~
+En el fichero incluido desde /usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr.h:148,
+                 desde /usr/include/c++/9.3.0/ext/atomicity.h:35,
+                 desde /usr/include/c++/9.3.0/bits/ios_base.h:39,
+                 desde /usr/include/c++/9.3.0/ios:42,
+                 desde /usr/include/c++/9.3.0/ostream:38,
+                 desde /usr/include/c++/9.3.0/iostream:39,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:4:
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:47:9: error: ‘pthread_t’ no nombra a un tipo
+   47 | typedef pthread_t __gthread_t;
+      |         ^~~~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:48:9: error: ‘pthread_key_t’ no nombra a un tipo
+   48 | typedef pthread_key_t __gthread_key_t;
+      |         ^~~~~~~~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:49:9: error: ‘pthread_once_t’ no nombra a un tipo
+   49 | typedef pthread_once_t __gthread_once_t;
+      |         ^~~~~~~~~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:50:9: error: ‘pthread_mutex_t’ no nombra a un tipo
+   50 | typedef pthread_mutex_t __gthread_mutex_t;
+      |         ^~~~~~~~~~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:51:9: error: ‘pthread_mutex_t’ no nombra a un tipo
+   51 | typedef pthread_mutex_t __gthread_recursive_mutex_t;
+      |         ^~~~~~~~~~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:52:9: error: ‘pthread_cond_t’ no nombra a un tipo
+   52 | typedef pthread_cond_t __gthread_cond_t;
+      |         ^~~~~~~~~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:102:1: error: ‘pthread_once’ no se declaró en este ámbito
+  102 | __gthrw(pthread_once)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:102:1: error: ‘pthread_once’ no se declaró en este ámbito
+  102 | __gthrw(pthread_once)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:102:1: error: la referencia débil ‘ComportamientoJugador::__gthrw_pthread_once’ debe tener enlace estático
+  102 | __gthrw(pthread_once)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:103:1: error: ‘pthread_getspecific’ no se declaró en este ámbito
+  103 | __gthrw(pthread_getspecific)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:103:1: error: ‘pthread_getspecific’ no se declaró en este ámbito
+  103 | __gthrw(pthread_getspecific)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:103:1: error: la referencia débil ‘ComportamientoJugador::__gthrw_pthread_getspecific’ debe tener enlace estático
+  103 | __gthrw(pthread_getspecific)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:104:1: error: ‘pthread_setspecific’ was not declared in this scope; did you mean ‘__gthrw_pthread_getspecific’?
+  104 | __gthrw(pthread_setspecific)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:104:1: error: ‘pthread_setspecific’ was not declared in this scope; did you mean ‘__gthrw_pthread_getspecific’?
+  104 | __gthrw(pthread_setspecific)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:104:1: error: la referencia débil ‘ComportamientoJugador::__gthrw_pthread_setspecific’ debe tener enlace estático
+  104 | __gthrw(pthread_setspecific)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:106:1: error: ‘pthread_create’ no se declaró en este ámbito
+  106 | __gthrw(pthread_create)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:106:1: error: ‘pthread_create’ no se declaró en este ámbito
+  106 | __gthrw(pthread_create)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:106:1: error: la referencia débil ‘ComportamientoJugador::__gthrw_pthread_create’ debe tener enlace estático
+  106 | __gthrw(pthread_create)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:107:1: error: ‘pthread_join’ no se declaró en este ámbito
+  107 | __gthrw(pthread_join)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:107:1: error: ‘pthread_join’ no se declaró en este ámbito
+  107 | __gthrw(pthread_join)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:107:1: error: la referencia débil ‘ComportamientoJugador::__gthrw_pthread_join’ debe tener enlace estático
+  107 | __gthrw(pthread_join)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:108:1: error: ‘pthread_equal’ was not declared in this scope; did you mean ‘thread_local’?
+  108 | __gthrw(pthread_equal)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:108:1: error: ‘pthread_equal’ was not declared in this scope; did you mean ‘thread_local’?
+  108 | __gthrw(pthread_equal)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:108:1: error: la referencia débil ‘ComportamientoJugador::__gthrw_pthread_equal’ debe tener enlace estático
+  108 | __gthrw(pthread_equal)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:109:1: error: ‘pthread_self’ no se declaró en este ámbito
+  109 | __gthrw(pthread_self)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:109:1: error: ‘pthread_self’ no se declaró en este ámbito
+  109 | __gthrw(pthread_self)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:109:1: error: la referencia débil ‘ComportamientoJugador::__gthrw_pthread_self’ debe tener enlace estático
+  109 | __gthrw(pthread_self)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:110:1: error: ‘pthread_detach’ no se declaró en este ámbito
+  110 | __gthrw(pthread_detach)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:110:1: error: ‘pthread_detach’ no se declaró en este ámbito
+  110 | __gthrw(pthread_detach)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:110:1: error: la referencia débil ‘ComportamientoJugador::__gthrw_pthread_detach’ debe tener enlace estático
+  110 | __gthrw(pthread_detach)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:112:1: error: ‘pthread_cancel’ was not declared in this scope; did you mean ‘thread_local’?
+  112 | __gthrw(pthread_cancel)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:112:1: error: ‘pthread_cancel’ was not declared in this scope; did you mean ‘thread_local’?
+  112 | __gthrw(pthread_cancel)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:112:1: error: la referencia débil ‘ComportamientoJugador::__gthrw_pthread_cancel’ debe tener enlace estático
+  112 | __gthrw(pthread_cancel)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:114:1: error: ‘sched_yield’ no se declaró en este ámbito
+  114 | __gthrw(sched_yield)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:114:1: error: ‘sched_yield’ no se declaró en este ámbito
+  114 | __gthrw(sched_yield)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:114:1: error: la referencia débil ‘ComportamientoJugador::__gthrw_sched_yield’ debe tener enlace estático
+  114 | __gthrw(sched_yield)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:116:1: error: ‘pthread_mutex_lock’ no se declaró en este ámbito
+  116 | __gthrw(pthread_mutex_lock)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:116:1: error: ‘pthread_mutex_lock’ no se declaró en este ámbito
+  116 | __gthrw(pthread_mutex_lock)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:116:1: error: la referencia débil ‘ComportamientoJugador::__gthrw_pthread_mutex_lock’ debe tener enlace estático
+  116 | __gthrw(pthread_mutex_lock)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:117:1: error: ‘pthread_mutex_trylock’ no se declaró en este ámbito
+  117 | __gthrw(pthread_mutex_trylock)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:117:1: error: ‘pthread_mutex_trylock’ no se declaró en este ámbito
+  117 | __gthrw(pthread_mutex_trylock)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:117:1: error: la referencia débil ‘ComportamientoJugador::__gthrw_pthread_mutex_trylock’ debe tener enlace estático
+  117 | __gthrw(pthread_mutex_trylock)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:119:1: error: ‘pthread_mutex_timedlock’ no se declaró en este ámbito
+  119 | __gthrw(pthread_mutex_timedlock)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:119:1: error: ‘pthread_mutex_timedlock’ no se declaró en este ámbito
+  119 | __gthrw(pthread_mutex_timedlock)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:119:1: error: la referencia débil ‘ComportamientoJugador::__gthrw_pthread_mutex_timedlock’ debe tener enlace estático
+  119 | __gthrw(pthread_mutex_timedlock)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:121:1: error: ‘pthread_mutex_unlock’ no se declaró en este ámbito
+  121 | __gthrw(pthread_mutex_unlock)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:121:1: error: ‘pthread_mutex_unlock’ no se declaró en este ámbito
+  121 | __gthrw(pthread_mutex_unlock)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:121:1: error: la referencia débil ‘ComportamientoJugador::__gthrw_pthread_mutex_unlock’ debe tener enlace estático
+  121 | __gthrw(pthread_mutex_unlock)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:122:1: error: ‘pthread_mutex_init’ no se declaró en este ámbito
+  122 | __gthrw(pthread_mutex_init)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:122:1: error: ‘pthread_mutex_init’ no se declaró en este ámbito
+  122 | __gthrw(pthread_mutex_init)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:122:1: error: la referencia débil ‘ComportamientoJugador::__gthrw_pthread_mutex_init’ debe tener enlace estático
+  122 | __gthrw(pthread_mutex_init)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:123:1: error: ‘pthread_mutex_destroy’ no se declaró en este ámbito
+  123 | __gthrw(pthread_mutex_destroy)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:123:1: error: ‘pthread_mutex_destroy’ no se declaró en este ámbito
+  123 | __gthrw(pthread_mutex_destroy)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:123:1: error: la referencia débil ‘ComportamientoJugador::__gthrw_pthread_mutex_destroy’ debe tener enlace estático
+  123 | __gthrw(pthread_mutex_destroy)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:125:1: error: ‘pthread_cond_init’ no se declaró en este ámbito
+  125 | __gthrw(pthread_cond_init)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:125:1: error: ‘pthread_cond_init’ no se declaró en este ámbito
+  125 | __gthrw(pthread_cond_init)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:125:1: error: la referencia débil ‘ComportamientoJugador::__gthrw_pthread_cond_init’ debe tener enlace estático
+  125 | __gthrw(pthread_cond_init)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:126:1: error: ‘pthread_cond_broadcast’ no se declaró en este ámbito
+  126 | __gthrw(pthread_cond_broadcast)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:126:1: error: ‘pthread_cond_broadcast’ no se declaró en este ámbito
+  126 | __gthrw(pthread_cond_broadcast)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:126:1: error: la referencia débil ‘ComportamientoJugador::__gthrw_pthread_cond_broadcast’ debe tener enlace estático
+  126 | __gthrw(pthread_cond_broadcast)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:127:1: error: ‘pthread_cond_signal’ no se declaró en este ámbito
+  127 | __gthrw(pthread_cond_signal)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:127:1: error: ‘pthread_cond_signal’ no se declaró en este ámbito
+  127 | __gthrw(pthread_cond_signal)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:127:1: error: la referencia débil ‘ComportamientoJugador::__gthrw_pthread_cond_signal’ debe tener enlace estático
+  127 | __gthrw(pthread_cond_signal)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:128:1: error: ‘pthread_cond_wait’ no se declaró en este ámbito
+  128 | __gthrw(pthread_cond_wait)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:128:1: error: ‘pthread_cond_wait’ no se declaró en este ámbito
+  128 | __gthrw(pthread_cond_wait)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:128:1: error: la referencia débil ‘ComportamientoJugador::__gthrw_pthread_cond_wait’ debe tener enlace estático
+  128 | __gthrw(pthread_cond_wait)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:129:1: error: ‘pthread_cond_timedwait’ no se declaró en este ámbito
+  129 | __gthrw(pthread_cond_timedwait)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:129:1: error: ‘pthread_cond_timedwait’ no se declaró en este ámbito
+  129 | __gthrw(pthread_cond_timedwait)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:129:1: error: la referencia débil ‘ComportamientoJugador::__gthrw_pthread_cond_timedwait’ debe tener enlace estático
+  129 | __gthrw(pthread_cond_timedwait)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:130:1: error: ‘pthread_cond_destroy’ no se declaró en este ámbito
+  130 | __gthrw(pthread_cond_destroy)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:130:1: error: ‘pthread_cond_destroy’ no se declaró en este ámbito
+  130 | __gthrw(pthread_cond_destroy)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:130:1: error: la referencia débil ‘ComportamientoJugador::__gthrw_pthread_cond_destroy’ debe tener enlace estático
+  130 | __gthrw(pthread_cond_destroy)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:132:1: error: ‘pthread_key_create’ no se declaró en este ámbito
+  132 | __gthrw(pthread_key_create)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:132:1: error: ‘pthread_key_create’ no se declaró en este ámbito
+  132 | __gthrw(pthread_key_create)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:132:1: error: la referencia débil ‘ComportamientoJugador::__gthrw_pthread_key_create’ debe tener enlace estático
+  132 | __gthrw(pthread_key_create)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:133:1: error: ‘pthread_key_delete’ no se declaró en este ámbito
+  133 | __gthrw(pthread_key_delete)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:133:1: error: ‘pthread_key_delete’ no se declaró en este ámbito
+  133 | __gthrw(pthread_key_delete)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:133:1: error: la referencia débil ‘ComportamientoJugador::__gthrw_pthread_key_delete’ debe tener enlace estático
+  133 | __gthrw(pthread_key_delete)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:134:1: error: ‘pthread_mutexattr_init’ no se declaró en este ámbito
+  134 | __gthrw(pthread_mutexattr_init)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:134:1: error: ‘pthread_mutexattr_init’ no se declaró en este ámbito
+  134 | __gthrw(pthread_mutexattr_init)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:134:1: error: la referencia débil ‘ComportamientoJugador::__gthrw_pthread_mutexattr_init’ debe tener enlace estático
+  134 | __gthrw(pthread_mutexattr_init)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:135:1: error: ‘pthread_mutexattr_settype’ no se declaró en este ámbito
+  135 | __gthrw(pthread_mutexattr_settype)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:135:1: error: ‘pthread_mutexattr_settype’ no se declaró en este ámbito
+  135 | __gthrw(pthread_mutexattr_settype)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:135:1: error: la referencia débil ‘ComportamientoJugador::__gthrw_pthread_mutexattr_settype’ debe tener enlace estático
+  135 | __gthrw(pthread_mutexattr_settype)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:136:1: error: ‘pthread_mutexattr_destroy’ no se declaró en este ámbito
+  136 | __gthrw(pthread_mutexattr_destroy)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:136:1: error: ‘pthread_mutexattr_destroy’ no se declaró en este ámbito
+  136 | __gthrw(pthread_mutexattr_destroy)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:136:1: error: la referencia débil ‘ComportamientoJugador::__gthrw_pthread_mutexattr_destroy’ debe tener enlace estático
+  136 | __gthrw(pthread_mutexattr_destroy)
+      | ^~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:237:1: error: ‘pthread_key_create’ was not declared in this scope; did you mean ‘__gthrw_pthread_key_create’?
+  237 | __gthrw2(__gthrw_(__pthread_key_create),
+      | ^~~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:237:1: error: ‘pthread_key_create’ was not declared in this scope; did you mean ‘__gthrw_pthread_key_create’?
+  237 | __gthrw2(__gthrw_(__pthread_key_create),
+      | ^~~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:237:10: error: la referencia débil ‘ComportamientoJugador::__gthrw___pthread_key_create’ debe tener enlace estático
+  237 | __gthrw2(__gthrw_(__pthread_key_create),
+      |          ^~~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:660:19: error: ‘__gthread_t’ no se ha declarado
+  660 | __gthread_create (__gthread_t *__threadid, void *(*__func) (void*),
+      |                   ^~~~~~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:667:17: error: ‘__gthread_t’ no se ha declarado
+  667 | __gthread_join (__gthread_t __threadid, void **__value_ptr)
+      |                 ^~~~~~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:673:19: error: ‘__gthread_t’ no se ha declarado
+  673 | __gthread_detach (__gthread_t __threadid)
+      |                   ^~~~~~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:679:18: error: ‘__gthread_t’ no se ha declarado
+  679 | __gthread_equal (__gthread_t __t1, __gthread_t __t2)
+      |                  ^~~~~~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:679:36: error: ‘__gthread_t’ no se ha declarado
+  679 | __gthread_equal (__gthread_t __t1, __gthread_t __t2)
+      |                                    ^~~~~~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:684:15: error: ‘__gthread_t’ does not name a type; did you mean ‘__gthread_time_t’?
+  684 | static inline __gthread_t
+      |               ^~~~~~~~~~~
+      |               __gthread_time_t
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:697:17: error: ‘__gthread_once_t’ no se ha declarado
+  697 | __gthread_once (__gthread_once_t *__once, void (*__func) (void))
+      |                 ^~~~~~~~~~~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:706:23: error: ‘__gthread_key_t’ no se ha declarado
+  706 | __gthread_key_create (__gthread_key_t *__key, void (*__dtor) (void *))
+      |                       ^~~~~~~~~~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:712:23: error: ‘__gthread_key_t’ no se ha declarado
+  712 | __gthread_key_delete (__gthread_key_t __key)
+      |                       ^~~~~~~~~~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:718:1: error: se esperaba ‘;’ al final de la declaración miembro
+  718 | __gthread_getspecific (__gthread_key_t __key)
+      | ^~~~~~~~~~~~~~~~~~~~~
+      |                      ;
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:718:39: error: expected ‘)’ before ‘__key’
+  718 | __gthread_getspecific (__gthread_key_t __key)
+      |                       ~               ^~~~~~
+      |                                       )
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:724:24: error: ‘__gthread_key_t’ no se ha declarado
+  724 | __gthread_setspecific (__gthread_key_t __key, const void *__ptr)
+      |                        ^~~~~~~~~~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:730:32: error: ‘__gthread_mutex_t’ no se ha declarado
+  730 | __gthread_mutex_init_function (__gthread_mutex_t *__mutex)
+      |                                ^~~~~~~~~~~~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:737:26: error: ‘__gthread_mutex_t’ no se ha declarado
+  737 | __gthread_mutex_destroy (__gthread_mutex_t *__mutex)
+      |                          ^~~~~~~~~~~~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:746:23: error: ‘__gthread_mutex_t’ no se ha declarado
+  746 | __gthread_mutex_lock (__gthread_mutex_t *__mutex)
+      |                       ^~~~~~~~~~~~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:755:26: error: ‘__gthread_mutex_t’ no se ha declarado
+  755 | __gthread_mutex_trylock (__gthread_mutex_t *__mutex)
+      |                          ^~~~~~~~~~~~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:765:28: error: ‘__gthread_mutex_t’ no se ha declarado
+  765 | __gthread_mutex_timedlock (__gthread_mutex_t *__mutex,
+      |                            ^~~~~~~~~~~~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:776:25: error: ‘__gthread_mutex_t’ no se ha declarado
+  776 | __gthread_mutex_unlock (__gthread_mutex_t *__mutex)
+      |                         ^~~~~~~~~~~~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:809:33: error: ‘__gthread_recursive_mutex_t’ no se ha declarado
+  809 | __gthread_recursive_mutex_lock (__gthread_recursive_mutex_t *__mutex)
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:815:36: error: ‘__gthread_recursive_mutex_t’ no se ha declarado
+  815 | __gthread_recursive_mutex_trylock (__gthread_recursive_mutex_t *__mutex)
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:822:38: error: ‘__gthread_recursive_mutex_t’ no se ha declarado
+  822 | __gthread_recursive_mutex_timedlock (__gthread_recursive_mutex_t *__mutex,
+      |                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:830:35: error: ‘__gthread_recursive_mutex_t’ no se ha declarado
+  830 | __gthread_recursive_mutex_unlock (__gthread_recursive_mutex_t *__mutex)
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:836:36: error: ‘__gthread_recursive_mutex_t’ no se ha declarado
+  836 | __gthread_recursive_mutex_destroy (__gthread_recursive_mutex_t *__mutex)
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:851:27: error: ‘__gthread_cond_t’ no se ha declarado
+  851 | __gthread_cond_broadcast (__gthread_cond_t *__cond)
+      |                           ^~~~~~~~~~~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:857:24: error: ‘__gthread_cond_t’ no se ha declarado
+  857 | __gthread_cond_signal (__gthread_cond_t *__cond)
+      |                        ^~~~~~~~~~~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:863:22: error: ‘__gthread_cond_t’ no se ha declarado
+  863 | __gthread_cond_wait (__gthread_cond_t *__cond, __gthread_mutex_t *__mutex)
+      |                      ^~~~~~~~~~~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:863:48: error: ‘__gthread_mutex_t’ no se ha declarado
+  863 | __gthread_cond_wait (__gthread_cond_t *__cond, __gthread_mutex_t *__mutex)
+      |                                                ^~~~~~~~~~~~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:869:27: error: ‘__gthread_cond_t’ no se ha declarado
+  869 | __gthread_cond_timedwait (__gthread_cond_t *__cond, __gthread_mutex_t *__mutex,
+      |                           ^~~~~~~~~~~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:869:53: error: ‘__gthread_mutex_t’ no se ha declarado
+  869 | __gthread_cond_timedwait (__gthread_cond_t *__cond, __gthread_mutex_t *__mutex,
+      |                                                     ^~~~~~~~~~~~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:876:32: error: ‘__gthread_cond_t’ no se ha declarado
+  876 | __gthread_cond_wait_recursive (__gthread_cond_t *__cond,
+      |                                ^~~~~~~~~~~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:877:11: error: ‘__gthread_recursive_mutex_t’ no se ha declarado
+  877 |           __gthread_recursive_mutex_t *__mutex)
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:883:25: error: ‘__gthread_cond_t’ no se ha declarado
+  883 | __gthread_cond_destroy (__gthread_cond_t* __cond)
+      |                         ^~~~~~~~~~~~~~~~
+En el fichero incluido desde /usr/include/c++/9.3.0/bits/ios_base.h:39,
+                 desde /usr/include/c++/9.3.0/ios:42,
+                 desde /usr/include/c++/9.3.0/ostream:38,
+                 desde /usr/include/c++/9.3.0/iostream:39,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:4:
+/usr/include/c++/9.3.0/ext/atomicity.h:38:1: error: expected unqualified-id before ‘namespace’
+   38 | namespace __gnu_cxx _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+En el fichero incluido desde /usr/include/c++/9.3.0/bits/ostream_insert.h:36,
+                 desde /usr/include/c++/9.3.0/string:44,
+                 desde /usr/include/c++/9.3.0/bits/locale_classes.h:40,
+                 desde /usr/include/c++/9.3.0/bits/ios_base.h:41,
+                 desde /usr/include/c++/9.3.0/ios:42,
+                 desde /usr/include/c++/9.3.0/ostream:38,
+                 desde /usr/include/c++/9.3.0/iostream:39,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:4:
+/usr/include/c++/9.3.0/bits/cxxabi_forced.h:39:1: error: expected unqualified-id before ‘namespace’
+   39 | namespace __cxxabiv1
+      | ^~~~~~~~~
+En el fichero incluido desde /usr/include/c++/9.3.0/string:44,
+                 desde /usr/include/c++/9.3.0/bits/locale_classes.h:40,
+                 desde /usr/include/c++/9.3.0/bits/ios_base.h:41,
+                 desde /usr/include/c++/9.3.0/ios:42,
+                 desde /usr/include/c++/9.3.0/ostream:38,
+                 desde /usr/include/c++/9.3.0/iostream:39,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:4:
+/usr/include/c++/9.3.0/bits/ostream_insert.h:38:1: error: expected unqualified-id before ‘namespace’
+   38 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+En el fichero incluido desde /usr/include/c++/9.3.0/string:48,
+                 desde /usr/include/c++/9.3.0/bits/locale_classes.h:40,
+                 desde /usr/include/c++/9.3.0/bits/ios_base.h:41,
+                 desde /usr/include/c++/9.3.0/ios:42,
+                 desde /usr/include/c++/9.3.0/ostream:38,
+                 desde /usr/include/c++/9.3.0/iostream:39,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:4:
+/usr/include/c++/9.3.0/bits/stl_function.h:63:1: error: expected unqualified-id before ‘namespace’
+   63 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+En el fichero incluido desde /usr/include/c++/9.3.0/bits/stl_function.h:1392,
+                 desde /usr/include/c++/9.3.0/string:48,
+                 desde /usr/include/c++/9.3.0/bits/locale_classes.h:40,
+                 desde /usr/include/c++/9.3.0/bits/ios_base.h:41,
+                 desde /usr/include/c++/9.3.0/ios:42,
+                 desde /usr/include/c++/9.3.0/ostream:38,
+                 desde /usr/include/c++/9.3.0/iostream:39,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:4:
+/usr/include/c++/9.3.0/backward/binders.h:63:1: error: expected unqualified-id before ‘namespace’
+   63 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+En el fichero incluido desde /usr/include/c++/9.3.0/string:55,
+                 desde /usr/include/c++/9.3.0/bits/locale_classes.h:40,
+                 desde /usr/include/c++/9.3.0/bits/ios_base.h:41,
+                 desde /usr/include/c++/9.3.0/ios:42,
+                 desde /usr/include/c++/9.3.0/ostream:38,
+                 desde /usr/include/c++/9.3.0/iostream:39,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:4:
+/usr/include/c++/9.3.0/bits/basic_string.h:52:1: error: expected unqualified-id before ‘namespace’
+   52 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+En el fichero incluido desde /usr/include/features.h:465,
+                 desde /usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 desde /usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/c++config.h:524,
+                 desde /usr/include/c++/9.3.0/bits/stl_algobase.h:59,
+                 desde /usr/include/c++/9.3.0/vector:60,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/include/comportamientos/comportamiento.hpp:4,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/../Comportamientos_Jugador/jugador.hpp:4,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:1:
+/usr/include/stdio.h:29:1: error: expected unqualified-id before string constant
+   29 | __BEGIN_DECLS
+      | ^~~~~~~~~~~~~
+En el fichero incluido desde /usr/include/c++/9.3.0/ext/string_conversions.h:43,
+                 desde /usr/include/c++/9.3.0/bits/basic_string.h:6493,
+                 desde /usr/include/c++/9.3.0/string:55,
+                 desde /usr/include/c++/9.3.0/bits/locale_classes.h:40,
+                 desde /usr/include/c++/9.3.0/bits/ios_base.h:41,
+                 desde /usr/include/c++/9.3.0/ios:42,
+                 desde /usr/include/c++/9.3.0/ostream:38,
+                 desde /usr/include/c++/9.3.0/iostream:39,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:4:
+/usr/include/c++/9.3.0/cstdio:96:1: error: expected unqualified-id before ‘namespace’
+   96 | namespace std
+      | ^~~~~~~~~
+/usr/include/c++/9.3.0/cstdio:157:1: error: expected unqualified-id before ‘namespace’
+  157 | namespace __gnu_cxx
+      | ^~~~~~~~~
+/usr/include/c++/9.3.0/cstdio:183:1: error: expected unqualified-id before ‘namespace’
+  183 | namespace std
+      | ^~~~~~~~~
+En el fichero incluido desde /usr/include/features.h:465,
+                 desde /usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 desde /usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/c++config.h:524,
+                 desde /usr/include/c++/9.3.0/bits/stl_algobase.h:59,
+                 desde /usr/include/c++/9.3.0/vector:60,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/include/comportamientos/comportamiento.hpp:4,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/../Comportamientos_Jugador/jugador.hpp:4,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:1:
+/usr/include/errno.h:34:1: error: expected unqualified-id before string constant
+   34 | __BEGIN_DECLS
+      | ^~~~~~~~~~~~~
+En el fichero incluido desde /usr/include/c++/9.3.0/bits/basic_string.h:6493,
+                 desde /usr/include/c++/9.3.0/string:55,
+                 desde /usr/include/c++/9.3.0/bits/locale_classes.h:40,
+                 desde /usr/include/c++/9.3.0/bits/ios_base.h:41,
+                 desde /usr/include/c++/9.3.0/ios:42,
+                 desde /usr/include/c++/9.3.0/ostream:38,
+                 desde /usr/include/c++/9.3.0/iostream:39,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:4:
+/usr/include/c++/9.3.0/ext/string_conversions.h:46:1: error: expected unqualified-id before ‘namespace’
+   46 | namespace __gnu_cxx _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+En el fichero incluido desde /usr/include/c++/9.3.0/string:55,
+                 desde /usr/include/c++/9.3.0/bits/locale_classes.h:40,
+                 desde /usr/include/c++/9.3.0/bits/ios_base.h:41,
+                 desde /usr/include/c++/9.3.0/ios:42,
+                 desde /usr/include/c++/9.3.0/ostream:38,
+                 desde /usr/include/c++/9.3.0/iostream:39,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:4:
+/usr/include/c++/9.3.0/bits/basic_string.h:6495:1: error: expected unqualified-id before ‘namespace’
+ 6495 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+/usr/include/c++/9.3.0/bits/basic_string.h:6721:1: error: expected unqualified-id before ‘namespace’
+ 6721 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+En el fichero incluido desde /usr/include/c++/9.3.0/string:56,
+                 desde /usr/include/c++/9.3.0/bits/locale_classes.h:40,
+                 desde /usr/include/c++/9.3.0/bits/ios_base.h:41,
+                 desde /usr/include/c++/9.3.0/ios:42,
+                 desde /usr/include/c++/9.3.0/ostream:38,
+                 desde /usr/include/c++/9.3.0/iostream:39,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:4:
+/usr/include/c++/9.3.0/bits/basic_string.tcc:46:1: error: expected unqualified-id before ‘namespace’
+   46 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+En el fichero incluido desde /usr/include/c++/9.3.0/bits/ios_base.h:41,
+                 desde /usr/include/c++/9.3.0/ios:42,
+                 desde /usr/include/c++/9.3.0/ostream:38,
+                 desde /usr/include/c++/9.3.0/iostream:39,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:4:
+/usr/include/c++/9.3.0/bits/locale_classes.h:43:1: error: expected unqualified-id before ‘namespace’
+   43 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+En el fichero incluido desde /usr/include/c++/9.3.0/bits/locale_classes.h:851,
+                 desde /usr/include/c++/9.3.0/bits/ios_base.h:41,
+                 desde /usr/include/c++/9.3.0/ios:42,
+                 desde /usr/include/c++/9.3.0/ostream:38,
+                 desde /usr/include/c++/9.3.0/iostream:39,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:4:
+/usr/include/c++/9.3.0/bits/locale_classes.tcc:39:1: error: expected unqualified-id before ‘namespace’
+   39 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+En el fichero incluido desde /usr/include/c++/9.3.0/system_error:39,
+                 desde /usr/include/c++/9.3.0/bits/ios_base.h:46,
+                 desde /usr/include/c++/9.3.0/ios:42,
+                 desde /usr/include/c++/9.3.0/ostream:38,
+                 desde /usr/include/c++/9.3.0/iostream:39,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:4:
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/error_constants.h:36:1: error: expected unqualified-id before ‘namespace’
+   36 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+En el fichero incluido desde /usr/include/c++/9.3.0/system_error:41,
+                 desde /usr/include/c++/9.3.0/bits/ios_base.h:46,
+                 desde /usr/include/c++/9.3.0/ios:42,
+                 desde /usr/include/c++/9.3.0/ostream:38,
+                 desde /usr/include/c++/9.3.0/iostream:39,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:4:
+/usr/include/c++/9.3.0/stdexcept:41:1: error: expected unqualified-id before ‘namespace’
+   41 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+En el fichero incluido desde /usr/include/c++/9.3.0/bits/ios_base.h:46,
+                 desde /usr/include/c++/9.3.0/ios:42,
+                 desde /usr/include/c++/9.3.0/ostream:38,
+                 desde /usr/include/c++/9.3.0/iostream:39,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:4:
+/usr/include/c++/9.3.0/system_error:43:1: error: expected unqualified-id before ‘namespace’
+   43 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+/usr/include/c++/9.3.0/system_error:383:1: error: expected unqualified-id before ‘namespace’
+  383 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+En el fichero incluido desde /usr/include/c++/9.3.0/ios:42,
+                 desde /usr/include/c++/9.3.0/ostream:38,
+                 desde /usr/include/c++/9.3.0/iostream:39,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:4:
+/usr/include/c++/9.3.0/bits/ios_base.h:49:1: error: expected unqualified-id before ‘namespace’
+   49 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+En el fichero incluido desde /usr/include/c++/9.3.0/ios:43,
+                 desde /usr/include/c++/9.3.0/ostream:38,
+                 desde /usr/include/c++/9.3.0/iostream:39,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:4:
+/usr/include/c++/9.3.0/streambuf:45:1: error: expected unqualified-id before ‘namespace’
+   45 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+En el fichero incluido desde /usr/include/c++/9.3.0/streambuf:862,
+                 desde /usr/include/c++/9.3.0/ios:43,
+                 desde /usr/include/c++/9.3.0/ostream:38,
+                 desde /usr/include/c++/9.3.0/iostream:39,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:4:
+/usr/include/c++/9.3.0/bits/streambuf.tcc:39:1: error: expected unqualified-id before ‘namespace’
+   39 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+En el fichero incluido desde /usr/include/features.h:465,
+                 desde /usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 desde /usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/c++config.h:524,
+                 desde /usr/include/c++/9.3.0/bits/stl_algobase.h:59,
+                 desde /usr/include/c++/9.3.0/vector:60,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/include/comportamientos/comportamiento.hpp:4,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/../Comportamientos_Jugador/jugador.hpp:4,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:1:
+/usr/include/bits/wctype-wchar.h:87:1: error: expected unqualified-id before string constant
+   87 | __BEGIN_DECLS
+      | ^~~~~~~~~~~~~
+/usr/include/wctype.h:44:1: error: expected unqualified-id before string constant
+   44 | __BEGIN_DECLS
+      | ^~~~~~~~~~~~~
+En el fichero incluido desde /usr/include/c++/9.3.0/bits/locale_facets.h:39,
+                 desde /usr/include/c++/9.3.0/bits/basic_ios.h:37,
+                 desde /usr/include/c++/9.3.0/ios:44,
+                 desde /usr/include/c++/9.3.0/ostream:38,
+                 desde /usr/include/c++/9.3.0/iostream:39,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:4:
+/usr/include/c++/9.3.0/cwctype:80:1: error: expected unqualified-id before ‘namespace’
+   80 | namespace std
+      | ^~~~~~~~~
+En el fichero incluido desde /usr/include/c++/9.3.0/bits/locale_facets.h:41,
+                 desde /usr/include/c++/9.3.0/bits/basic_ios.h:37,
+                 desde /usr/include/c++/9.3.0/ios:44,
+                 desde /usr/include/c++/9.3.0/ostream:38,
+                 desde /usr/include/c++/9.3.0/iostream:39,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:4:
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/ctype_base.h:36:1: error: expected unqualified-id before ‘namespace’
+   36 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+En el fichero incluido desde /usr/include/c++/9.3.0/bits/locale_facets.h:48,
+                 desde /usr/include/c++/9.3.0/bits/basic_ios.h:37,
+                 desde /usr/include/c++/9.3.0/ios:44,
+                 desde /usr/include/c++/9.3.0/ostream:38,
+                 desde /usr/include/c++/9.3.0/iostream:39,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:4:
+/usr/include/c++/9.3.0/bits/streambuf_iterator.h:38:1: error: expected unqualified-id before ‘namespace’
+   38 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+En el fichero incluido desde /usr/include/c++/9.3.0/bits/basic_ios.h:37,
+                 desde /usr/include/c++/9.3.0/ios:44,
+                 desde /usr/include/c++/9.3.0/ostream:38,
+                 desde /usr/include/c++/9.3.0/iostream:39,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:4:
+/usr/include/c++/9.3.0/bits/locale_facets.h:50:1: error: expected unqualified-id before ‘namespace’
+   50 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+En el fichero incluido desde /usr/include/c++/9.3.0/bits/locale_facets.h:1538,
+                 desde /usr/include/c++/9.3.0/bits/basic_ios.h:37,
+                 desde /usr/include/c++/9.3.0/ios:44,
+                 desde /usr/include/c++/9.3.0/ostream:38,
+                 desde /usr/include/c++/9.3.0/iostream:39,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:4:
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/ctype_inline.h:37:1: error: expected unqualified-id before ‘namespace’
+   37 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+En el fichero incluido desde /usr/include/c++/9.3.0/bits/basic_ios.h:37,
+                 desde /usr/include/c++/9.3.0/ios:44,
+                 desde /usr/include/c++/9.3.0/ostream:38,
+                 desde /usr/include/c++/9.3.0/iostream:39,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:4:
+/usr/include/c++/9.3.0/bits/locale_facets.h:1540:1: error: expected unqualified-id before ‘namespace’
+ 1540 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+En el fichero incluido desde /usr/include/c++/9.3.0/bits/locale_facets.h:2655,
+                 desde /usr/include/c++/9.3.0/bits/basic_ios.h:37,
+                 desde /usr/include/c++/9.3.0/ios:44,
+                 desde /usr/include/c++/9.3.0/ostream:38,
+                 desde /usr/include/c++/9.3.0/iostream:39,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:4:
+/usr/include/c++/9.3.0/bits/locale_facets.tcc:35:1: error: expected unqualified-id before ‘namespace’
+   35 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+En el fichero incluido desde /usr/include/c++/9.3.0/ios:44,
+                 desde /usr/include/c++/9.3.0/ostream:38,
+                 desde /usr/include/c++/9.3.0/iostream:39,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:4:
+/usr/include/c++/9.3.0/bits/basic_ios.h:41:1: error: expected unqualified-id before ‘namespace’
+   41 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+En el fichero incluido desde /usr/include/c++/9.3.0/bits/basic_ios.h:516,
+                 desde /usr/include/c++/9.3.0/ios:44,
+                 desde /usr/include/c++/9.3.0/ostream:38,
+                 desde /usr/include/c++/9.3.0/iostream:39,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:4:
+/usr/include/c++/9.3.0/bits/basic_ios.tcc:35:1: error: expected unqualified-id before ‘namespace’
+   35 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+En el fichero incluido desde /usr/include/c++/9.3.0/iostream:39,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:4:
+/usr/include/c++/9.3.0/ostream:41:1: error: expected unqualified-id before ‘namespace’
+   41 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+En el fichero incluido desde /usr/include/c++/9.3.0/ostream:702,
+                 desde /usr/include/c++/9.3.0/iostream:39,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:4:
+/usr/include/c++/9.3.0/bits/ostream.tcc:41:1: error: expected unqualified-id before ‘namespace’
+   41 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+En el fichero incluido desde /usr/include/c++/9.3.0/iostream:40,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:4:
+/usr/include/c++/9.3.0/istream:41:1: error: expected unqualified-id before ‘namespace’
+   41 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+En el fichero incluido desde /usr/include/c++/9.3.0/istream:991,
+                 desde /usr/include/c++/9.3.0/iostream:40,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:4:
+/usr/include/c++/9.3.0/bits/istream.tcc:41:1: error: expected unqualified-id before ‘namespace’
+   41 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+En el fichero incluido desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:4:
+/usr/include/c++/9.3.0/iostream:42:1: error: expected unqualified-id before ‘namespace’
+   42 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+En el fichero incluido desde /usr/include/features.h:465,
+                 desde /usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/os_defines.h:39,
+                 desde /usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/c++config.h:524,
+                 desde /usr/include/c++/9.3.0/bits/stl_algobase.h:59,
+                 desde /usr/include/c++/9.3.0/vector:60,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/include/comportamientos/comportamiento.hpp:4,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/../Comportamientos_Jugador/jugador.hpp:4,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:1:
+/usr/include/math.h:34:1: error: expected unqualified-id before string constant
+   34 | __BEGIN_DECLS
+      | ^~~~~~~~~~~~~
+En el fichero incluido desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:5:
+/usr/include/c++/9.3.0/cmath:77:8: error: expected unqualified-id before string constant
+   77 | extern "C++"
+      |        ^~~~~
+En el fichero incluido desde /usr/include/c++/9.3.0/set:60,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:6:
+/usr/include/c++/9.3.0/bits/stl_tree.h:75:1: error: expected unqualified-id before ‘namespace’
+   75 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+En el fichero incluido desde /usr/include/c++/9.3.0/set:61,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:6:
+/usr/include/c++/9.3.0/bits/stl_set.h:64:1: error: expected unqualified-id before ‘namespace’
+   64 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+En el fichero incluido desde /usr/include/c++/9.3.0/set:62,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:6:
+/usr/include/c++/9.3.0/bits/stl_multiset.h:64:1: error: expected unqualified-id before ‘namespace’
+   64 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+En el fichero incluido desde /usr/include/c++/9.3.0/deque:67,
+                 desde /usr/include/c++/9.3.0/stack:60,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:7:
+/usr/include/c++/9.3.0/bits/stl_deque.h:69:1: error: expected unqualified-id before ‘namespace’
+   69 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+En el fichero incluido desde /usr/include/c++/9.3.0/deque:69,
+                 desde /usr/include/c++/9.3.0/stack:60,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:7:
+/usr/include/c++/9.3.0/bits/deque.tcc:59:1: error: expected unqualified-id before ‘namespace’
+   59 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+En el fichero incluido desde /usr/include/c++/9.3.0/bits/stl_stack.h:62,
+                 desde /usr/include/c++/9.3.0/stack:61,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:7:
+/usr/include/c++/9.3.0/bits/uses_allocator.h:35:1: error: expected unqualified-id before ‘namespace’
+   35 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+En el fichero incluido desde /usr/include/c++/9.3.0/stack:61,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:7:
+/usr/include/c++/9.3.0/bits/stl_stack.h:65:1: error: expected unqualified-id before ‘namespace’
+   65 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+En el fichero incluido desde /usr/include/c++/9.3.0/queue:62,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:8:
+/usr/include/c++/9.3.0/bits/stl_heap.h:62:1: error: expected unqualified-id before ‘namespace’
+   62 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+En el fichero incluido desde /usr/include/c++/9.3.0/queue:64,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:8:
+/usr/include/c++/9.3.0/bits/stl_queue.h:65:1: error: expected unqualified-id before ‘namespace’
+   65 | namespace std _GLIBCXX_VISIBILITY(default)
+      | ^~~~~~~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:14:8: error: calificación extra ‘ComportamientoJugador::’ en el miembro ‘think’ [-fpermissive]
+   14 | Action ComportamientoJugador::think(Sensores sensores) {
+      |        ^~~~~~~~~~~~~~~~~~~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:14:8: error: ‘Action ComportamientoJugador::think(Sensores)’ cannot be overloaded with ‘Action ComportamientoJugador::think(Sensores)’
+En el fichero incluido desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:1:
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/../Comportamientos_Jugador/jugador.hpp:48:12: nota: previous declaration ‘Action ComportamientoJugador::think(Sensores)’
+   48 |     Action think(Sensores sensores);
+      |            ^~~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:124:6: error: calificación extra ‘ComportamientoJugador::’ en el miembro ‘pathFinding’ [-fpermissive]
+  124 | bool ComportamientoJugador::pathFinding (int level, const estado &origen, const estado &destino, list<Action> &plan){
+      |      ^~~~~~~~~~~~~~~~~~~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:124:6: error: ‘bool ComportamientoJugador::pathFinding(int, const estado&, const estado&, std::__cxx11::list<Action>&)’ cannot be overloaded with ‘bool ComportamientoJugador::pathFinding(int, const estado&, const estado&, std::__cxx11::list<Action>&)’
+En el fichero incluido desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:1:
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/../Comportamientos_Jugador/jugador.hpp:65:8: nota: previous declaration ‘bool ComportamientoJugador::pathFinding(int, const estado&, const estado&, std::__cxx11::list<Action>&)’
+   65 |   bool pathFinding(int level, const estado &origen, const estado &destino, list<Action> &plan);
+      |        ^~~~~~~~~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:162:6: error: calificación extra ‘ComportamientoJugador::’ en el miembro ‘HayObstaculoDelante’ [-fpermissive]
+  162 | bool ComportamientoJugador::HayObstaculoDelante(estado &st){
+      |      ^~~~~~~~~~~~~~~~~~~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:162:6: error: ‘bool ComportamientoJugador::HayObstaculoDelante(estado&)’ cannot be overloaded with ‘bool ComportamientoJugador::HayObstaculoDelante(estado&)’
+En el fichero incluido desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:1:
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/../Comportamientos_Jugador/jugador.hpp:69:10: nota: previous declaration ‘bool ComportamientoJugador::HayObstaculoDelante(estado&)’
+   69 |     bool HayObstaculoDelante(estado &st);
+      |          ^~~~~~~~~~~~~~~~~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:211:6: error: calificación extra ‘ComportamientoJugador::’ en el miembro ‘pathFinding_Profundidad’ [-fpermissive]
+  211 | bool ComportamientoJugador::pathFinding_Profundidad(const estado &origen, const estado &destino, list<Action> &plan) {
+      |      ^~~~~~~~~~~~~~~~~~~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:211:6: error: ‘bool ComportamientoJugador::pathFinding_Profundidad(const estado&, const estado&, std::__cxx11::list<Action>&)’ cannot be overloaded with ‘bool ComportamientoJugador::pathFinding_Profundidad(const estado&, const estado&, std::__cxx11::list<Action>&)’
+En el fichero incluido desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:1:
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/../Comportamientos_Jugador/jugador.hpp:66:10: nota: previous declaration ‘bool ComportamientoJugador::pathFinding_Profundidad(const estado&, const estado&, std::__cxx11::list<Action>&)’
+   66 |     bool pathFinding_Profundidad(const estado &origen, const estado &destino, list<Action> &plan);
+      |          ^~~~~~~~~~~~~~~~~~~~~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:287:6: error: calificación extra ‘ComportamientoJugador::’ en el miembro ‘PintaPlan’ [-fpermissive]
+  287 | void ComportamientoJugador::PintaPlan(list<Action> plan) {
+      |      ^~~~~~~~~~~~~~~~~~~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:287:6: error: ‘void ComportamientoJugador::PintaPlan(std::__cxx11::list<Action>)’ cannot be overloaded with ‘void ComportamientoJugador::PintaPlan(std::__cxx11::list<Action>)’
+En el fichero incluido desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:1:
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/../Comportamientos_Jugador/jugador.hpp:68:10: nota: previous declaration ‘void ComportamientoJugador::PintaPlan(std::__cxx11::list<Action>)’
+   68 |     void PintaPlan(list<Action> plan);
+      |          ^~~~~~~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:319:6: error: calificación extra ‘ComportamientoJugador::’ en el miembro ‘VisualizaPlan’ [-fpermissive]
+  319 | void ComportamientoJugador::VisualizaPlan(const estado &st, const list<Action> &plan){
+      |      ^~~~~~~~~~~~~~~~~~~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:319:6: error: ‘void ComportamientoJugador::VisualizaPlan(const estado&, const std::__cxx11::list<Action>&)’ cannot be overloaded with ‘void ComportamientoJugador::VisualizaPlan(const estado&, const std::__cxx11::list<Action>&)’
+En el fichero incluido desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:1:
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/../Comportamientos_Jugador/jugador.hpp:50:10: nota: previous declaration ‘void ComportamientoJugador::VisualizaPlan(const estado&, const std::__cxx11::list<Action>&)’
+   50 |     void VisualizaPlan(const estado &st, const list<Action> &plan);
+      |          ^~~~~~~~~~~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:346:5: error: calificación extra ‘ComportamientoJugador::’ en el miembro ‘interact’ [-fpermissive]
+  346 | int ComportamientoJugador::interact(Action accion, int valor){
+      |     ^~~~~~~~~~~~~~~~~~~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:346:5: error: ‘int ComportamientoJugador::interact(Action, int)’ cannot be overloaded with ‘int ComportamientoJugador::interact(Action, int)’
+En el fichero incluido desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:1:
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/../Comportamientos_Jugador/jugador.hpp:49:9: nota: previous declaration ‘int ComportamientoJugador::interact(Action, int)’
+   49 |     int interact(Action accion, int valor);
+      |         ^~~~~~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:357:6: error: calificación extra ‘ComportamientoJugador::’ en el miembro ‘pathFinding_Anchura’ [-fpermissive]
+  357 | bool ComportamientoJugador::pathFinding_Anchura(const estado &origen, const estado &destino, list<Action> &plan) {
+      |      ^~~~~~~~~~~~~~~~~~~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:357:6: error: ‘bool ComportamientoJugador::pathFinding_Anchura(const estado&, const estado&, std::__cxx11::list<Action>&)’ cannot be overloaded with ‘bool ComportamientoJugador::pathFinding_Anchura(const estado&, const estado&, std::__cxx11::list<Action>&)’
+En el fichero incluido desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:1:
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/../Comportamientos_Jugador/jugador.hpp:74:8: nota: previous declaration ‘bool ComportamientoJugador::pathFinding_Anchura(const estado&, const estado&, std::__cxx11::list<Action>&)’
+   74 |   bool pathFinding_Anchura(const estado &origen, const estado &destino, list<Action> &plan);
+      |        ^~~~~~~~~~~~~~~~~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:446:6: error: calificación extra ‘ComportamientoJugador::’ en el miembro ‘gastoBateria’ [-fpermissive]
+  446 | int  ComportamientoJugador::gastoBateria( char tipoCasilla) {
+      |      ^~~~~~~~~~~~~~~~~~~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:446:6: error: ‘int ComportamientoJugador::gastoBateria(char)’ cannot be overloaded with ‘int ComportamientoJugador::gastoBateria(char)’
+En el fichero incluido desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:1:
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/../Comportamientos_Jugador/jugador.hpp:80:7: nota: previous declaration ‘int ComportamientoJugador::gastoBateria(char)’
+   80 |   int gastoBateria( char tipoCasilla);
+      |       ^~~~~~~~~~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:475:6: error: calificación extra ‘ComportamientoJugador::’ en el miembro ‘pathFinding_CostoUniforme’ [-fpermissive]
+  475 | bool ComportamientoJugador::pathFinding_CostoUniforme(const estado &origen, const estado &destino, list<Action> &plan) {
+      |      ^~~~~~~~~~~~~~~~~~~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:475:6: error: ‘bool ComportamientoJugador::pathFinding_CostoUniforme(const estado&, const estado&, std::__cxx11::list<Action>&)’ cannot be overloaded with ‘bool ComportamientoJugador::pathFinding_CostoUniforme(const estado&, const estado&, std::__cxx11::list<Action>&)’
+En el fichero incluido desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:1:
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/../Comportamientos_Jugador/jugador.hpp:77:8: nota: previous declaration ‘bool ComportamientoJugador::pathFinding_CostoUniforme(const estado&, const estado&, std::__cxx11::list<Action>&)’
+   77 |   bool pathFinding_CostoUniforme(const estado &origen, const estado &destino, list<Action> &plan);
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:596:6: error: calificación extra ‘ComportamientoJugador::’ en el miembro ‘pathFinding_Nivel2’ [-fpermissive]
+  596 | bool ComportamientoJugador::pathFinding_Nivel2(const estado &origen, const estado &destino, list<Action> &plan, Sensores & sensores) {
+      |      ^~~~~~~~~~~~~~~~~~~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:596:6: error: ‘bool ComportamientoJugador::pathFinding_Nivel2(const estado&, const estado&, std::__cxx11::list<Action>&, Sensores&)’ cannot be overloaded with ‘bool ComportamientoJugador::pathFinding_Nivel2(const estado&, const estado&, std::__cxx11::list<Action>&, Sensores&)’
+En el fichero incluido desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:1:
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/../Comportamientos_Jugador/jugador.hpp:85:8: nota: previous declaration ‘bool ComportamientoJugador::pathFinding_Nivel2(const estado&, const estado&, std::__cxx11::list<Action>&, Sensores&)’
+   85 |   bool pathFinding_Nivel2(const estado &origen, const estado &destino, list<Action> &plan, Sensores & sensores);
+      |        ^~~~~~~~~~~~~~~~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:653:6: error: calificación extra ‘ComportamientoJugador::’ en el miembro ‘actualizaMapa’ [-fpermissive]
+  653 | bool ComportamientoJugador::actualizaMapa ( int bloque , int inicio, Sensores & sensores ){
+      |      ^~~~~~~~~~~~~~~~~~~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:653:6: error: ‘bool ComportamientoJugador::actualizaMapa(int, int, Sensores&)’ cannot be overloaded with ‘bool ComportamientoJugador::actualizaMapa(int, int, Sensores&)’
+En el fichero incluido desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:1:
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/../Comportamientos_Jugador/jugador.hpp:90:8: nota: previous declaration ‘bool ComportamientoJugador::actualizaMapa(int, int, Sensores&)’
+   90 |   bool actualizaMapa( int bloque, int inicio, Sensores & sensores);
+      |        ^~~~~~~~~~~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:716:53: error: ‘set’ no se ha declarado
+  716 | bool generaHijo(nodoNivel2 nodo, Action direccion,  set<estado,ComparaEstados> & generados, priority_queue<nodoNivel2>& cola_prioridad;) {
+      |                                                     ^~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:716:56: error: expected ‘,’ or ‘...’ before ‘<’ token
+  716 | bool generaHijo(nodoNivel2 nodo, Action direccion,  set<estado,ComparaEstados> & generados, priority_queue<nodoNivel2>& cola_prioridad;) {
+      |                                                        ^
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:716:135: error: expected ‘)’ before ‘;’ token
+  716 | bool generaHijo(nodoNivel2 nodo, Action direccion,  set<estado,ComparaEstados> & generados, priority_queue<nodoNivel2>& cola_prioridad;) {
+      |                ~                                                                                                                      ^
+      |                                                                                                                                       )
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:716:136: error: expected unqualified-id before ‘)’ token
+  716 | bool generaHijo(nodoNivel2 nodo, Action direccion,  set<estado,ComparaEstados> & generados, priority_queue<nodoNivel2>& cola_prioridad;) {
+      |                                                                                                                                        ^
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:748:1: error: expected ‘}’ at end of input
+  748 | }
+      | ^
+En el fichero incluido desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:1:
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/../Comportamientos_Jugador/jugador.hpp:24:53: nota: to match this ‘{’
+   24 | class ComportamientoJugador : public Comportamiento {
+      |                                                     ^
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/../Comportamientos_Jugador/jugador.hpp:107:7: error: flexible array member ‘ComportamientoJugador::pesosPrioridad’ not at end of ‘class ComportamientoJugador’
+  107 |   int pesosPrioridad[]= {1,1,2,2};
+      |       ^~~~~~~~~~~~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/../Comportamientos_Jugador/jugador.hpp:107:7: error: initializer for flexible array member ‘int ComportamientoJugador::pesosPrioridad []’
+En el fichero incluido desde /usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr.h:148,
+                 desde /usr/include/c++/9.3.0/ext/atomicity.h:35,
+                 desde /usr/include/c++/9.3.0/bits/ios_base.h:39,
+                 desde /usr/include/c++/9.3.0/ios:42,
+                 desde /usr/include/c++/9.3.0/ostream:38,
+                 desde /usr/include/c++/9.3.0/iostream:39,
+                 desde /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:4:
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h: En la función miembro static ‘static int ComportamientoJugador::__gthread_create(int*, void* (*)(void*), void*)’:
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:663:68: error: ‘ComportamientoJugador::__gthrw_pthread_create’ cannot be used as a function
+  663 |   return __gthrw_(pthread_create) (__threadid, NULL, __func, __args);
+      |                                                                    ^
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h: En la función miembro static ‘static int ComportamientoJugador::__gthread_join(int, void**)’:
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:669:57: error: ‘ComportamientoJugador::__gthrw_pthread_join’ cannot be used as a function
+  669 |   return __gthrw_(pthread_join) (__threadid, __value_ptr);
+      |                                                         ^
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h: En la función miembro static ‘static int ComportamientoJugador::__gthread_detach(int)’:
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:675:46: error: ‘ComportamientoJugador::__gthrw_pthread_detach’ cannot be used as a function
+  675 |   return __gthrw_(pthread_detach) (__threadid);
+      |                                              ^
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h: En la función miembro static ‘static int ComportamientoJugador::__gthread_equal(int, int)’:
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:681:45: error: ‘ComportamientoJugador::__gthrw_pthread_equal’ cannot be used as a function
+  681 |   return __gthrw_(pthread_equal) (__t1, __t2);
+      |                                             ^
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h: En la función miembro static ‘static int ComportamientoJugador::__gthread_yield()’:
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:693:33: error: ‘ComportamientoJugador::__gthrw_sched_yield’ cannot be used as a function
+  693 |   return __gthrw_(sched_yield) ();
+      |                                 ^
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h: En la función miembro static ‘static int ComportamientoJugador::__gthread_once(int*, void (*)())’:
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:700:50: error: ‘ComportamientoJugador::__gthrw_pthread_once’ cannot be used as a function
+  700 |     return __gthrw_(pthread_once) (__once, __func);
+      |                                                  ^
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h: En la función miembro static ‘static int ComportamientoJugador::__gthread_key_create(int*, void (*)(void*))’:
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:708:53: error: ‘ComportamientoJugador::__gthrw_pthread_key_create’ cannot be used as a function
+  708 |   return __gthrw_(pthread_key_create) (__key, __dtor);
+      |                                                     ^
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h: En la función miembro static ‘static int ComportamientoJugador::__gthread_key_delete(int)’:
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:714:45: error: ‘ComportamientoJugador::__gthrw_pthread_key_delete’ cannot be used as a function
+  714 |   return __gthrw_(pthread_key_delete) (__key);
+      |                                             ^
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h: En la función miembro static ‘static int ComportamientoJugador::__gthread_setspecific(int, const void*)’:
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:726:53: error: ‘ComportamientoJugador::__gthrw_pthread_setspecific’ cannot be used as a function
+  726 |   return __gthrw_(pthread_setspecific) (__key, __ptr);
+      |                                                     ^
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h: En la función miembro static ‘static void ComportamientoJugador::__gthread_mutex_init_function(int*)’:
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:733:48: error: ‘ComportamientoJugador::__gthrw_pthread_mutex_init’ cannot be used as a function
+  733 |     __gthrw_(pthread_mutex_init) (__mutex, NULL);
+      |                                                ^
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h: En la función miembro static ‘static int ComportamientoJugador::__gthread_mutex_destroy(int*)’:
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:740:52: error: ‘ComportamientoJugador::__gthrw_pthread_mutex_destroy’ cannot be used as a function
+  740 |     return __gthrw_(pthread_mutex_destroy) (__mutex);
+      |                                                    ^
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h: En la función miembro static ‘static int ComportamientoJugador::__gthread_mutex_lock(int*)’:
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:749:49: error: ‘ComportamientoJugador::__gthrw_pthread_mutex_lock’ cannot be used as a function
+  749 |     return __gthrw_(pthread_mutex_lock) (__mutex);
+      |                                                 ^
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h: En la función miembro static ‘static int ComportamientoJugador::__gthread_mutex_trylock(int*)’:
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:758:52: error: ‘ComportamientoJugador::__gthrw_pthread_mutex_trylock’ cannot be used as a function
+  758 |     return __gthrw_(pthread_mutex_trylock) (__mutex);
+      |                                                    ^
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h: En la función miembro static ‘static int ComportamientoJugador::__gthread_mutex_timedlock(int*, const __gthread_time_t*)’:
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:769:69: error: ‘ComportamientoJugador::__gthrw_pthread_mutex_timedlock’ cannot be used as a function
+  769 |     return __gthrw_(pthread_mutex_timedlock) (__mutex, __abs_timeout);
+      |                                                                     ^
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h: En la función miembro static ‘static int ComportamientoJugador::__gthread_mutex_unlock(int*)’:
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:779:51: error: ‘ComportamientoJugador::__gthrw_pthread_mutex_unlock’ cannot be used as a function
+  779 |     return __gthrw_(pthread_mutex_unlock) (__mutex);
+      |                                                   ^
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h: En la función miembro static ‘static int ComportamientoJugador::__gthread_cond_broadcast(int*)’:
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:853:50: error: ‘ComportamientoJugador::__gthrw_pthread_cond_broadcast’ cannot be used as a function
+  853 |   return __gthrw_(pthread_cond_broadcast) (__cond);
+      |                                                  ^
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h: En la función miembro static ‘static int ComportamientoJugador::__gthread_cond_signal(int*)’:
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:859:47: error: ‘ComportamientoJugador::__gthrw_pthread_cond_signal’ cannot be used as a function
+  859 |   return __gthrw_(pthread_cond_signal) (__cond);
+      |                                               ^
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h: En la función miembro static ‘static int ComportamientoJugador::__gthread_cond_wait(int*, int*)’:
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:865:54: error: ‘ComportamientoJugador::__gthrw_pthread_cond_wait’ cannot be used as a function
+  865 |   return __gthrw_(pthread_cond_wait) (__cond, __mutex);
+      |                                                      ^
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h: En la función miembro static ‘static int ComportamientoJugador::__gthread_cond_timedwait(int*, int*, const __gthread_time_t*)’:
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:872:74: error: ‘ComportamientoJugador::__gthrw_pthread_cond_timedwait’ cannot be used as a function
+  872 |   return __gthrw_(pthread_cond_timedwait) (__cond, __mutex, __abs_timeout);
+      |                                                                          ^
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h: En la función miembro static ‘static int ComportamientoJugador::__gthread_cond_destroy(int*)’:
+/usr/include/c++/9.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h:885:48: error: ‘ComportamientoJugador::__gthrw_pthread_cond_destroy’ cannot be used as a function
+  885 |   return __gthrw_(pthread_cond_destroy) (__cond);
+      |                                                ^
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp: En la función miembro ‘Action ComportamientoJugador::think(Sensores)’:
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:28:7: error: ‘cout’ no se declaró en este ámbito
+   28 |       cout << "Fila: " << actual.fila << endl;
+      |       ^~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:9:1: nota: ‘std::cout’ is defined in header ‘<iostream>’; did you forget to ‘#include <iostream>’?
+    8 | #include <queue> // std::queue para búsqueda en anchura y std::priority_queue Para el costo uniforme
+  +++ |+#include <iostream>
+    9 | 
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:28:42: error: ‘endl’ no se declaró en este ámbito
+   28 |       cout << "Fila: " << actual.fila << endl;
+      |                                          ^~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:9:1: nota: ‘std::endl’ is defined in header ‘<ostream>’; did you forget to ‘#include <ostream>’?
+    8 | #include <queue> // std::queue para búsqueda en anchura y std::priority_queue Para el costo uniforme
+  +++ |+#include <ostream>
+    9 | 
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:43:7: error: ‘cout’ no se declaró en este ámbito
+   43 |       cout << "Plan mal implementado o no se ha encontrado " << endl;
+      |       ^~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:43:7: nota: ‘std::cout’ is defined in header ‘<iostream>’; did you forget to ‘#include <iostream>’?
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:43:65: error: ‘endl’ no se declaró en este ámbito
+   43 |       cout << "Plan mal implementado o no se ha encontrado " << endl;
+      |                                                                 ^~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:43:65: nota: ‘std::endl’ is defined in header ‘<ostream>’; did you forget to ‘#include <ostream>’?
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:83:7: error: ‘cout’ no se declaró en este ámbito
+   83 |       cout << "Fila: " << actual.fila << endl;
+      |       ^~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:83:7: nota: ‘std::cout’ is defined in header ‘<iostream>’; did you forget to ‘#include <iostream>’?
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:83:42: error: ‘endl’ no se declaró en este ámbito
+   83 |       cout << "Fila: " << actual.fila << endl;
+      |                                          ^~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:83:42: nota: ‘std::endl’ is defined in header ‘<ostream>’; did you forget to ‘#include <ostream>’?
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp: En la función miembro ‘bool ComportamientoJugador::pathFinding(int, const estado&, const estado&, std::__cxx11::list<Action>&)’:
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:126:11: error: ‘cout’ no se declaró en este ámbito
+  126 |   case 1: cout << "Busqueda en profundad\n";
+      |           ^~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:126:11: nota: ‘std::cout’ is defined in header ‘<iostream>’; did you forget to ‘#include <iostream>’?
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:142:3: error: ‘cout’ no se declaró en este ámbito
+  142 |   cout << "Comportamiento sin implementar\n";
+      |   ^~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:142:3: nota: ‘std::cout’ is defined in header ‘<iostream>’; did you forget to ‘#include <iostream>’?
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp: En la función miembro ‘bool ComportamientoJugador::pathFinding_Profundidad(const estado&, const estado&, std::__cxx11::list<Action>&)’:
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:213:3: error: ‘cout’ no se declaró en este ámbito
+  213 |   cout << "Calculando plan\n";
+      |   ^~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:213:3: nota: ‘std::cout’ is defined in header ‘<iostream>’; did you forget to ‘#include <iostream>’?
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:215:3: error: ‘set’ no se declaró en este ámbito
+  215 |   set<estado,ComparaEstados> generados; // Lista de Cerrados
+      |   ^~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:9:1: nota: ‘std::set’ is defined in header ‘<set>’; did you forget to ‘#include <set>’?
+    8 | #include <queue> // std::queue para búsqueda en anchura y std::priority_queue Para el costo uniforme
+  +++ |+#include <set>
+    9 | 
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:215:13: error: expected primary-expression before ‘,’ token
+  215 |   set<estado,ComparaEstados> generados; // Lista de Cerrados
+      |             ^
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:215:28: error: expected primary-expression before ‘>’ token
+  215 |   set<estado,ComparaEstados> generados; // Lista de Cerrados
+      |                            ^
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:215:30: error: ‘generados’ no se declaró en este ámbito
+  215 |   set<estado,ComparaEstados> generados; // Lista de Cerrados
+      |                              ^~~~~~~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:216:3: error: ‘stack’ no se declaró en este ámbito
+  216 |   stack<nodo> pila;          // Lista de Abiertos
+      |   ^~~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:9:1: nota: ‘std::stack’ is defined in header ‘<stack>’; did you forget to ‘#include <stack>’?
+    8 | #include <queue> // std::queue para búsqueda en anchura y std::priority_queue Para el costo uniforme
+  +++ |+#include <stack>
+    9 | 
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:216:13: error: expected primary-expression before ‘>’ token
+  216 |   stack<nodo> pila;          // Lista de Abiertos
+      |             ^
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:216:15: error: ‘pila’ no se declaró en este ámbito
+  216 |   stack<nodo> pila;          // Lista de Abiertos
+      |               ^~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:266:53: error: ‘endl’ no se declaró en este ámbito
+  266 |     cout << "Longitud del plan: " << plan.size() << endl;
+      |                                                     ^~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:266:53: nota: ‘std::endl’ is defined in header ‘<ostream>’; did you forget to ‘#include <ostream>’?
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp: En la función miembro ‘void ComportamientoJugador::PintaPlan(std::__cxx11::list<Action>)’:
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:291:7: error: ‘cout’ no se declaró en este ámbito
+  291 |       cout << "A ";
+      |       ^~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:291:7: nota: ‘std::cout’ is defined in header ‘<iostream>’; did you forget to ‘#include <iostream>’?
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:294:7: error: ‘cout’ no se declaró en este ámbito
+  294 |       cout << "D ";
+      |       ^~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:294:7: nota: ‘std::cout’ is defined in header ‘<iostream>’; did you forget to ‘#include <iostream>’?
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:297:7: error: ‘cout’ no se declaró en este ámbito
+  297 |       cout << "I ";
+      |       ^~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:297:7: nota: ‘std::cout’ is defined in header ‘<iostream>’; did you forget to ‘#include <iostream>’?
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:300:7: error: ‘cout’ no se declaró en este ámbito
+  300 |       cout << "- ";
+      |       ^~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:300:7: nota: ‘std::cout’ is defined in header ‘<iostream>’; did you forget to ‘#include <iostream>’?
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:304:3: error: ‘cout’ no se declaró en este ámbito
+  304 |   cout << endl;
+      |   ^~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:304:3: nota: ‘std::cout’ is defined in header ‘<iostream>’; did you forget to ‘#include <iostream>’?
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:304:11: error: ‘endl’ no se declaró en este ámbito
+  304 |   cout << endl;
+      |           ^~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:304:11: nota: ‘std::endl’ is defined in header ‘<ostream>’; did you forget to ‘#include <ostream>’?
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp: En la función miembro ‘bool ComportamientoJugador::pathFinding_Anchura(const estado&, const estado&, std::__cxx11::list<Action>&)’:
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:359:3: error: ‘cout’ no se declaró en este ámbito
+  359 |   cout << "Calculando plan\n";
+      |   ^~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:359:3: nota: ‘std::cout’ is defined in header ‘<iostream>’; did you forget to ‘#include <iostream>’?
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:361:3: error: ‘set’ no se declaró en este ámbito
+  361 |   set<estado,ComparaEstados> generados; // Lista de Cerrados
+      |   ^~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:361:3: nota: ‘std::set’ is defined in header ‘<set>’; did you forget to ‘#include <set>’?
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:361:13: error: expected primary-expression before ‘,’ token
+  361 |   set<estado,ComparaEstados> generados; // Lista de Cerrados
+      |             ^
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:361:28: error: expected primary-expression before ‘>’ token
+  361 |   set<estado,ComparaEstados> generados; // Lista de Cerrados
+      |                            ^
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:361:30: error: ‘generados’ no se declaró en este ámbito
+  361 |   set<estado,ComparaEstados> generados; // Lista de Cerrados
+      |                              ^~~~~~~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:362:3: error: ‘queue’ no se declaró en este ámbito
+  362 |   queue<nodo> cola;          // Lista de Abiertos
+      |   ^~~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:9:1: nota: ‘std::queue’ is defined in header ‘<queue>’; did you forget to ‘#include <queue>’?
+    8 | #include <queue> // std::queue para búsqueda en anchura y std::priority_queue Para el costo uniforme
+  +++ |+#include <queue>
+    9 | 
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:362:13: error: expected primary-expression before ‘>’ token
+  362 |   queue<nodo> cola;          // Lista de Abiertos
+      |             ^
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:362:15: error: ‘cola’ was not declared in this scope; did you mean ‘col’?
+  362 |   queue<nodo> cola;          // Lista de Abiertos
+      |               ^~~~
+      |               col
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:412:53: error: ‘endl’ no se declaró en este ámbito
+  412 |     cout << "Longitud del plan: " << plan.size() << endl;
+      |                                                     ^~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:412:53: nota: ‘std::endl’ is defined in header ‘<ostream>’; did you forget to ‘#include <ostream>’?
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp: En la función miembro ‘int ComportamientoJugador::gastoBateria(char)’:
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:467:21: error: ‘cout’ no se declaró en este ámbito
+  467 |   if (gasto == 10 ) cout << "SE HA COGIDO BIKINI" << endl;
+      |                     ^~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:467:21: nota: ‘std::cout’ is defined in header ‘<iostream>’; did you forget to ‘#include <iostream>’?
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:467:54: error: ‘endl’ no se declaró en este ámbito
+  467 |   if (gasto == 10 ) cout << "SE HA COGIDO BIKINI" << endl;
+      |                                                      ^~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:467:54: nota: ‘std::endl’ is defined in header ‘<ostream>’; did you forget to ‘#include <ostream>’?
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp: En la función miembro ‘bool ComportamientoJugador::pathFinding_CostoUniforme(const estado&, const estado&, std::__cxx11::list<Action>&)’:
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:477:3: error: ‘cout’ no se declaró en este ámbito
+  477 |   cout << "Calculando plan\n";
+      |   ^~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:477:3: nota: ‘std::cout’ is defined in header ‘<iostream>’; did you forget to ‘#include <iostream>’?
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:479:3: error: ‘set’ no se declaró en este ámbito
+  479 |   set<estado,ComparaEstados> generados;          // Lista de Cerrados
+      |   ^~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:479:3: nota: ‘std::set’ is defined in header ‘<set>’; did you forget to ‘#include <set>’?
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:479:13: error: expected primary-expression before ‘,’ token
+  479 |   set<estado,ComparaEstados> generados;          // Lista de Cerrados
+      |             ^
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:479:28: error: expected primary-expression before ‘>’ token
+  479 |   set<estado,ComparaEstados> generados;          // Lista de Cerrados
+      |                            ^
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:479:30: error: ‘generados’ no se declaró en este ámbito
+  479 |   set<estado,ComparaEstados> generados;          // Lista de Cerrados
+      |                              ^~~~~~~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:480:3: error: ‘priority_queue’ no se declaró en este ámbito
+  480 |   priority_queue<nodoUniforme> cola_prioridad;  // Lista de Abiertos
+      |   ^~~~~~~~~~~~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:480:3: nota: ‘std::priority_queue’ is defined in header ‘<queue>’; did you forget to ‘#include <queue>’?
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:480:30: error: expected primary-expression before ‘>’ token
+  480 |   priority_queue<nodoUniforme> cola_prioridad;  // Lista de Abiertos
+      |                              ^
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:480:32: error: ‘cola_prioridad’ no se declaró en este ámbito
+  480 |   priority_queue<nodoUniforme> cola_prioridad;  // Lista de Abiertos
+      |                                ^~~~~~~~~~~~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:547:53: error: ‘endl’ no se declaró en este ámbito
+  547 |     cout << "Longitud del plan: " << plan.size() << endl;
+      |                                                     ^~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:547:53: nota: ‘std::endl’ is defined in header ‘<ostream>’; did you forget to ‘#include <ostream>’?
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp: En la función miembro ‘int ComportamientoJugador::distanciaManhattan(int, int, int, int)’:
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:566:11: error: ‘abs’ no se declaró en este ámbito
+  566 |   return  abs(destinoF - posF) + abs(destinoC - posC);
+      |           ^~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp: En la función miembro ‘void ComportamientoJugador::nodoNivel2::calculaDistancia(int, int)’:
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:576:56: error: ‘posF’ no se declaró en este ámbito
+  576 |     distancia = distanciaManhattan( destinoF, destinoC,posF, posC, n.st.fila, n.st.columna)
+      |                                                        ^~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:576:62: error: ‘posC’ no se declaró en este ámbito
+  576 |     distancia = distanciaManhattan( destinoF, destinoC,posF, posC, n.st.fila, n.st.columna)
+      |                                                              ^~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp: En la función miembro ‘bool ComportamientoJugador::pathFinding_Nivel2(const estado&, const estado&, std::__cxx11::list<Action>&, Sensores&)’:
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:598:3: error: ‘cout’ no se declaró en este ámbito
+  598 |   cout << "Calculando plan\n";
+      |   ^~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:598:3: nota: ‘std::cout’ is defined in header ‘<iostream>’; did you forget to ‘#include <iostream>’?
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:600:3: error: ‘set’ no se declaró en este ámbito
+  600 |   set<estado,ComparaEstados> generados;          // Lista de Cerrados
+      |   ^~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:600:3: nota: ‘std::set’ is defined in header ‘<set>’; did you forget to ‘#include <set>’?
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:600:13: error: expected primary-expression before ‘,’ token
+  600 |   set<estado,ComparaEstados> generados;          // Lista de Cerrados
+      |             ^
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:600:28: error: expected primary-expression before ‘>’ token
+  600 |   set<estado,ComparaEstados> generados;          // Lista de Cerrados
+      |                            ^
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:600:30: error: ‘generados’ no se declaró en este ámbito
+  600 |   set<estado,ComparaEstados> generados;          // Lista de Cerrados
+      |                              ^~~~~~~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:601:3: error: ‘priority_queue’ no se declaró en este ámbito
+  601 |   priority_queue<nodoNivel2> cola_prioridad;  // Lista de Abiertos
+      |   ^~~~~~~~~~~~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:601:3: nota: ‘std::priority_queue’ is defined in header ‘<queue>’; did you forget to ‘#include <queue>’?
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:601:28: error: expected primary-expression before ‘>’ token
+  601 |   priority_queue<nodoNivel2> cola_prioridad;  // Lista de Abiertos
+      |                            ^
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:601:30: error: ‘cola_prioridad’ no se declaró en este ámbito
+  601 |   priority_queue<nodoNivel2> cola_prioridad;  // Lista de Abiertos
+      |                              ^~~~~~~~~~~~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:638:53: error: ‘endl’ no se declaró en este ámbito
+  638 |     cout << "Longitud del plan: " << plan.size() << endl;
+      |                                                     ^~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:638:53: nota: ‘std::endl’ is defined in header ‘<ostream>’; did you forget to ‘#include <ostream>’?
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp: En la función miembro ‘bool ComportamientoJugador::actualizaMapa(int, int, Sensores&)’:
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:707:5: error: ‘cout’ no se declaró en este ámbito
+  707 |     cout << "  f= " << f <<  "  c = " << c << endl ;
+      |     ^~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:707:5: nota: ‘std::cout’ is defined in header ‘<iostream>’; did you forget to ‘#include <iostream>’?
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:707:47: error: ‘endl’ no se declaró en este ámbito
+  707 |     cout << "  f= " << f <<  "  c = " << c << endl ;
+      |                                               ^~~~
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:707:47: nota: ‘std::endl’ is defined in header ‘<ostream>’; did you forget to ‘#include <ostream>’?
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp: En el ámbito global:
+/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp:713:1: error: expected unqualified-id at end of input
+  713 | }
+      | ^
+make[2]: *** [CMakeFiles/comportamientosLib.dir/build.make:96: CMakeFiles/comportamientosLib.dir/Comportamientos_Jugador/jugador.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:251: CMakeFiles/comportamientosLib.dir/all] Error 2
+make: *** [Makefile:104: all] Error 2

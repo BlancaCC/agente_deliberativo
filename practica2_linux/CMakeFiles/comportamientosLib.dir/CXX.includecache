@@ -21,6 +21,8 @@ stack
 -
 queue
 -
+vector
+-
 
 /home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.hpp
 comportamientos/comportamiento.hpp

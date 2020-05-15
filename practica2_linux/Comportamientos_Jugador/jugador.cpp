@@ -5,7 +5,9 @@
 #include <cmath> // stl::abs
 #include <set>
 #include <stack>
-#include <queue> // std::queue para búsqueda en anchura y std::priority_queue Para el costo uniforme 
+#include <queue> // std::queue para búsqueda en anchura y std::priority_queue Para el costo uniforme
+#include <vector>
+using namespace std; 
 
 
 // Este es el método principal que debe contener los 4 Comportamientos_Jugador
@@ -571,9 +573,15 @@ struct nodoNivel2 {
   nodo n;
   int bateria, distancia; 
   float prioridad;
- 
-  //tendrá preferencia en la cola el que menos batería lleve gastada
-  
+
+  void calculaDistancia ( int destinoF, int destinoC){
+    distancia = distanciaManhattan( destinoF, destinoC,posF, posC, n.st.fila, n.st.columna) 
+  }
+
+  void calculaPrioridad(){
+    prioridad = distancia + bateria;
+  }
+  //tendrá preferencia en la cola el que menos prioridad tenga
   bool operator<(const nodoNivel2 & otroNodo) const {
     return prioridad > otroNodo.prioridad || (prioridad == otroNodo.prioridad && bateria > otroNodo.bateria);
     }
@@ -583,6 +591,7 @@ struct nodoNivel2 {
 float calculaPrioridad ( nodoNivel2 & n, int destinoF, int destinoC) {
 
   int dist = distanciaManhattan(destinoF, destinoC, n.n.st.fila, n.n.st.columna)*2;
+  return dist;
   
 }
 
@@ -591,74 +600,36 @@ bool ComportamientoJugador::pathFinding_Nivel2(const estado &origen, const estad
   cout << "Calculando plan\n";
   plan.clear();
   set<estado,ComparaEstados> generados;          // Lista de Cerrados
-  priority_queue<nodoUniforme> cola_prioridad;	 // Lista de Abiertos
+  priority_queue<nodoNivel2> cola_prioridad;	 // Lista de Abiertos
 
-  nodoUniforme current;
+  nodoNivel2 current;
   current.n.st = origen;
   current.n.secuencia.empty();
-  current.bateriaGastada = 0;
+  current.prioridad = 0;
 
+  vector<Action> opcionesPosibles = {actFORWARD, actTURN_R, actTURN_L, actIDLE};
 
   cola_prioridad.push(current);
 
 
- 
-  while (!cola_prioridad.empty() and (current.n.st.fila!=destino.fila or current.n.st.columna != destino.columna)){
+  int cnt = 0;
+  
+  while (!cola_prioridad.empty() and (current.n.st.fila!=destino.fila or current.n.st.columna != destino.columna or cnt > VENTANA)){
 
     cola_prioridad.pop();
    
     generados.insert(current.n.st);
-    //AQUÍ ESTOY CAMBIANDO MAPAreSULTADO 
-    //mapaResultado[sensores.posF][]
-      
-    //cout << "--- Se ha seleccionado nodo con gasto " << current.bateriaGastada << "---" <<  endl; 
-
-    //int gasto_bateria = gastoBateria( mapaResultado[current.n.st.fila][current.n.st.columna]);
-    //int gasto_bateria = distanciaManhattan(destino.fila, destino.columna,
-    // hijoTurn.n.st.fila, hijoTurn.n.st.columna); 
+   
+    //generamos hijos
+    for(auto d : opcionesPosibles)
+      generaHijo(current, d, generados, cola_prioridad); 
     
-    // Generar descendiente de girar a la derecha
-    
-    nodoUniforme  hijoTurnR = current;    
-    hijoTurnR.n.st.orientacion = (hijoTurnR.n.st.orientacion+1)%4;
-    if (generados.find(hijoTurnR.n.st) == generados.end()){
-      hijoTurnR.bateriaGastada += distanciaManhattan(destino.fila, destino.columna,
-					   hijoTurnR.n.st.fila, hijoTurnR.n.st.columna); 
-      //cout << "Se crea hijo derecho con coste de bateria " << hijoTurnR.bateriaGastada << endl; 
-      hijoTurnR.n.secuencia.push_back(actTURN_R);
-      cola_prioridad.push(hijoTurnR);
-
-    }
-
-    // Generar descendiente de girar a la izquierda
-    nodoUniforme  hijoTurnL = current;
-    hijoTurnL.n.st.orientacion = (hijoTurnL.n.st.orientacion+3)%4;
-    if (generados.find(hijoTurnL.n.st) == generados.end()){
-      hijoTurnL.bateriaGastada += distanciaManhattan(destino.fila, destino.columna,
-					   hijoTurnL.n.st.fila, hijoTurnL.n.st.columna); 
-      // cout << "Se crea hijo izquierdo con coste de bateria " << hijoTurnL.bateriaGastada << endl; 
-      hijoTurnL.n.secuencia.push_back(actTURN_L);
-      cola_prioridad.push(hijoTurnL);
-    }
-
-    // Generar descendiente de avanzar
-    nodoUniforme  hijoForward = current;
-
-    if (! HayObstaculoDelante(hijoForward.n.st)){
-      if (generados.find(hijoForward.n.st) == generados.end()){
-	hijoForward.bateriaGastada += distanciaManhattan(destino.fila, destino.columna,
-					   hijoForward.n.st.fila, hijoForward.n.st.columna); ;
-	//	cout << "S añade hijo de avance  con coste de batería  " << hijoForward.bateriaGastada << endl; 
-	hijoForward.n.secuencia.push_back(actFORWARD);
-	cola_prioridad.push(hijoForward);
-      }
-    }
-
     // Tomo el siguiente valor de la cola_prioridad
     if (!cola_prioridad.empty()){
       current = cola_prioridad.top();
       
     }
+    cnt++; 
   }
  
   cout << "Terminada la busqueda\n";
@@ -691,7 +662,8 @@ bool ComportamientoJugador::actualizaMapa ( int bloque , int inicio, Sensores & 
   int addf = 0,addc = 0;
 
   
-
+  //en función de la orientación el índice de las casillas a actualizar
+  //partiendo de la posición inicial se mueven de manera distinta
   switch(actual.orientacion) {
   case norte:
     f -= bloque;
@@ -708,7 +680,7 @@ bool ComportamientoJugador::actualizaMapa ( int bloque , int inicio, Sensores & 
     break;
 
   case oeste:
-    f += bloque;
+    f += bloque; 
     c -= bloque;
     addf = -1;
 
@@ -739,5 +711,40 @@ bool ComportamientoJugador::actualizaMapa ( int bloque , int inicio, Sensores & 
     c+=addc;
   }
   return salida; 
+  
+}
+
+
+bool generaHijo(nodoNivel2 nodo, Action direccion,  set<estado,ComparaEstados> & generados, priority_queue<nodoNivel2>& cola_prioridad;) {
+  
+  if( direccion == actFORWARD && HayObstaculoDelante(nodo.n.st)) {
+      
+      return false; // no se puede crear el hijo
+    }
+  
+  int add_orientacion = 0; 
+  switch(direccion){
+  case actTURN_R:
+      add_orientacion = 1;
+      break;
+  case actTURN_L:
+      add_orientacion = 3;
+      break;
+  default:
+    break;
+  }
+
+  
+  if(add_orientacion != 0)
+    nodo.n.st.orientacion = (nodo.n.st.orientacion + add_orientacion)%4;
+  
+  if (generados.find(nodo.n.st) == generados.end()){
+    nodo.prioridad += distanciaManhattan(destino.fila, destino.columna,
+					      nodo.n.st.fila, nodo.n.st.columna); 
+    // cout << "Se crea hijo izquierdo con coste de bateria " << nodo.bateriaGastada << endl; 
+    nodo.n.secuencia.push_back(direccion);
+    cola_prioridad.push(nodo);
+
+    return true; //se envía el nodo modoficado
   
 }
