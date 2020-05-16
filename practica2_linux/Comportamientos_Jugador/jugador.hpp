@@ -3,7 +3,12 @@
 
 #include "comportamientos/comportamiento.hpp"
 
+#include <cmath>
 #include <list>
+#include <stack>
+#include <queue> // std::queue para búsqueda en anchura y std::priority_queue Para el costo uniforme
+#include <vector>
+#include<set>
 
 struct estado {
   int fila;
@@ -11,15 +16,66 @@ struct estado {
   int orientacion;
 };
 
-/* Actualiza el mapa actual, 
-bloque es la tanda de sensor terreno a añadir 0  [0], 1[1,3], [4,8],[9,15] {0,1,2,3}
-inicio es la casilla primera  a analizar {0,1,4,9}ç
+struct nodo{
+	estado st;
+	list<Action> secuencia;
+};
 
-EL O NO LO CALCULA
- */
+struct ComparaEstados{
+	bool operator()(const estado &a, const estado &n) const{
+		if ((a.fila > n.fila) or (a.fila == n.fila and a.columna > n.columna) or
+	      (a.fila == n.fila and a.columna == n.columna and a.orientacion > n.orientacion))
+			return true;
+		else
+			return false;
+	}
+};
+// mis estructura
 
 
-int distanciaManhattan( int destinoF, int destinoC, int posF, int posC);
+
+struct nodoNivel2 {
+  nodo n;
+  int bateria, distancia; 
+  float prioridad;
+  int destinoF,destinoC;
+  bool bikini_on, zapatillas_on; 
+
+ 
+  
+  int distanciaManhattan( int destinoF, int destinoC, int posF, int posC) {
+    return  abs(destinoF - posF) + abs(destinoC - posC); 
+  }
+  
+
+  int distanciaManhattanNodo(int destinoF, int destinoC){
+    return distanciaManhattan( destinoF, destinoC, n.st.fila, n.st.columna);
+  }
+  
+  void actualizaInfo(int gasto) {
+    calculaDistancia();
+    actualizaBateria(gasto);
+    calculaPrioridad();
+  }
+
+  void calculaDistancia (){
+    distancia =  distanciaManhattanNodo( destinoF, destinoC);//, n.st.fila, n.st.columna);
+  }
+
+  void calculaPrioridad(){
+    prioridad = distancia;
+  }
+
+  void actualizaBateria(int gasto) {
+    bateria +=  gasto;
+  }
+  //tendrá preferencia en la cola el que menos prioridad tenga
+  bool operator<(const nodoNivel2 & otroNodo) const {
+    return prioridad > otroNodo.prioridad || (prioridad == otroNodo.prioridad && bateria > otroNodo.bateria);
+    }
+  
+};
+
 
 class ComportamientoJugador : public Comportamiento {
   public:
@@ -40,7 +96,6 @@ class ComportamientoJugador : public Comportamiento {
       destino.columna = -1;
       destino.orientacion = -1;
       hayplan=false;
-
     }
     ComportamientoJugador(const ComportamientoJugador & comport) : Comportamiento(comport){}
     ~ComportamientoJugador(){}
@@ -55,32 +110,35 @@ class ComportamientoJugador : public Comportamiento {
     int fil, col, brujula;
     estado actual, destino;
     list<Action> plan;
-  bool hayplan = false; //modificamos este valor para implementar la búsqueda
+    bool hayplan;
 
-  //añado mis variables
+  //AÑADO MIS VARIABLES 
   bool bikini = false;
   bool zapatillas = false; 
 
+
     // Métodos privados de la clase
-  bool pathFinding(int level, const estado &origen, const estado &destino, list<Action> &plan);
+    bool pathFinding(int level, const estado &origen, const estado &destino, list<Action> &plan);
     bool pathFinding_Profundidad(const estado &origen, const estado &destino, list<Action> &plan);
 
     void PintaPlan(list<Action> plan);
     bool HayObstaculoDelante(estado &st);
 
 
+  
   // ------- MÉTODOS DE BÚSQUEDA -------
-  // EN ANCHURA
+  // _________ EN ANCHURA________
   bool pathFinding_Anchura(const estado &origen, const estado &destino, list<Action> &plan);
 
   // COSTO UNIFORME 
   bool pathFinding_CostoUniforme(const estado &origen, const estado &destino, list<Action> &plan);
 
   // variables auxiliares
-  int gastoBateria( char tipoCasilla);
+  int gastoBateria( char tipoCasilla, bool & bikini_on, bool & zapatillas_on);
   bool bikiniEquipado(){return bikini;};
   bool zapatillasEquipadas(){ return zapatillas;}
 
+  
   // ===============  NIVEL 2 ============
   bool pathFinding_Nivel2(const estado &origen, const estado &destino, list<Action> &plan, Sensores & sensores);
   int girosInicio = 0; //si estamos al inicio del juego
@@ -89,30 +147,33 @@ class ComportamientoJugador : public Comportamiento {
   int destinoF_ant, destinoC_ant; 
   bool actualizaMapa( int bloque, int inicio, Sensores & sensores);
 
-  //variables para estimación del predominio terreno
-  int cnt_pasos = 0; //contador de pasos dados
-  //contadores de tipos de casilla:
-  int cnt_s =0;
-  int cnt_t =0; //tierra gasto 2
-  int cnt_b =0; //bosque gasto 50
-  int cnt_a =0; //aguas gasto 100
 
-  /* vector de prioridades, estas son: (cuanto menor sea el número mayor será la prioridad:
-     - ahorro_bateria
-     - destino final
-     - coger bañador
-     - coger zapatillas
-    
-   */
-  int pesosPrioridad[]= {1,1,2,2};
-
-  enum tiposPrioridades {BATERIA, DESTINO, BIKINI, ZAPATILLAS};
-  void reajustaPrioridadBasadoContadores();
-  void reajustaPriorudadBasadoMapa();
   /**
      Intenta generar un hijo si es posible
      true si lo ha generado
    */
-  int VENTANA = 5; 
+  bool generaHijo(nodoNivel2 nodo, Action direccion,  set<estado,ComparaEstados> & generados, priority_queue<nodoNivel2>& cola_prioridad);
+
+  // almacenamos puntos interesantes
+  set<vector<int>>casillasBateria; // {fila, columna}
+
+  struct punto {
+    int f,c;
+    int distancia;
+    
+    bool operator<(const punto & otro) const {
+      return distancia > otro.distancia || (distancia > otro.distancia && (f != otro.f || c != otro.c));
+    }
+    
+    
+  }; 
+  
+  // ---- variables para evitar el bloqueo
+  int psudo_destino_activado = false; 
+  int pseudo_destinoC;
+  int pseudo_destinoF;
+
+
+};
 
 #endif

@@ -6,5 +6,5 @@ CXX_FLAGS =  -fopenmp -pthread -std=c++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/pedro/repositorio/agente_deliberativo/practica2_linux/include 
+CXX_INCLUDES = -I/home/pedro/campo_de_batalla/version2/include 
 

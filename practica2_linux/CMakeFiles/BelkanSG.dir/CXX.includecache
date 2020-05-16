@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/pedro/repositorio/agente_deliberativo/practica2_linux/bin_src/juegoSG.cc
+/home/pedro/campo_de_batalla/version2/bin_src/juegoSG.cc
 motorlib.hpp
-/home/pedro/repositorio/agente_deliberativo/practica2_linux/bin_src/motorlib.hpp
+/home/pedro/campo_de_batalla/version2/bin_src/motorlib.hpp
 fstream
 -
 
@@ -25,7 +25,17 @@ Comportamientos_Jugador/comportamientos/comportamiento.hpp
 Comportamientos_Jugador/jugador.hpp
 comportamientos/comportamiento.hpp
 Comportamientos_Jugador/comportamientos/comportamiento.hpp
+cmath
+-
 list
+-
+stack
+-
+queue
+-
+vector
+-
+set
 -
 
 include/comportamientolib.hpp

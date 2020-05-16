@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/aldeano.cpp" "/home/pedro/repositorio/agente_deliberativo/practica2_linux/CMakeFiles/comportamientosLib.dir/Comportamientos_Jugador/aldeano.cpp.o"
-  "/home/pedro/repositorio/agente_deliberativo/practica2_linux/Comportamientos_Jugador/jugador.cpp" "/home/pedro/repositorio/agente_deliberativo/practica2_linux/CMakeFiles/comportamientosLib.dir/Comportamientos_Jugador/jugador.cpp.o"
-  "/home/pedro/repositorio/agente_deliberativo/practica2_linux/src/comportamientos/comportamiento.cpp" "/home/pedro/repositorio/agente_deliberativo/practica2_linux/CMakeFiles/comportamientosLib.dir/src/comportamientos/comportamiento.cpp.o"
+  "/home/pedro/campo_de_batalla/version2/Comportamientos_Jugador/aldeano.cpp" "/home/pedro/campo_de_batalla/version2/CMakeFiles/comportamientosLib.dir/Comportamientos_Jugador/aldeano.cpp.o"
+  "/home/pedro/campo_de_batalla/version2/Comportamientos_Jugador/jugador.cpp" "/home/pedro/campo_de_batalla/version2/CMakeFiles/comportamientosLib.dir/Comportamientos_Jugador/jugador.cpp.o"
+  "/home/pedro/campo_de_batalla/version2/src/comportamientos/comportamiento.cpp" "/home/pedro/campo_de_batalla/version2/CMakeFiles/comportamientosLib.dir/src/comportamientos/comportamiento.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

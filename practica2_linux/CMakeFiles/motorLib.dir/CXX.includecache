@@ -6,31 +6,31 @@
 
 #IncludeRegexTransform: 
 
-/home/pedro/repositorio/agente_deliberativo/practica2_linux/src/motorlib/entidad.cpp
+/home/pedro/campo_de_batalla/version2/src/motorlib/entidad.cpp
 motorlib/entidad.hpp
-/home/pedro/repositorio/agente_deliberativo/practica2_linux/src/motorlib/motorlib/entidad.hpp
+/home/pedro/campo_de_batalla/version2/src/motorlib/motorlib/entidad.hpp
 
-/home/pedro/repositorio/agente_deliberativo/practica2_linux/src/motorlib/mapa.cpp
+/home/pedro/campo_de_batalla/version2/src/motorlib/mapa.cpp
 motorlib/mapa.hpp
-/home/pedro/repositorio/agente_deliberativo/practica2_linux/src/motorlib/motorlib/mapa.hpp
+/home/pedro/campo_de_batalla/version2/src/motorlib/motorlib/mapa.hpp
 
-/home/pedro/repositorio/agente_deliberativo/practica2_linux/src/motorlib/monitor.cpp
+/home/pedro/campo_de_batalla/version2/src/motorlib/monitor.cpp
 motorlib/monitor.hpp
-/home/pedro/repositorio/agente_deliberativo/practica2_linux/src/motorlib/motorlib/monitor.hpp
+/home/pedro/campo_de_batalla/version2/src/motorlib/motorlib/monitor.hpp
 fstream
 -
 
-/home/pedro/repositorio/agente_deliberativo/practica2_linux/src/motorlib/motor_grafico.cpp
+/home/pedro/campo_de_batalla/version2/src/motorlib/motor_grafico.cpp
 motorlib.hpp
-/home/pedro/repositorio/agente_deliberativo/practica2_linux/src/motorlib/motorlib.hpp
+/home/pedro/campo_de_batalla/version2/src/motorlib/motorlib.hpp
 glui/glui.h
 -
 dirent.h
 -
 
-/home/pedro/repositorio/agente_deliberativo/practica2_linux/src/motorlib/motor_juego.cpp
+/home/pedro/campo_de_batalla/version2/src/motorlib/motor_juego.cpp
 motorlib.hpp
-/home/pedro/repositorio/agente_deliberativo/practica2_linux/src/motorlib/motorlib.hpp
+/home/pedro/campo_de_batalla/version2/src/motorlib/motorlib.hpp
 unistd.h
 -
 
@@ -47,7 +47,17 @@ Comportamientos_Jugador/comportamientos/comportamiento.hpp
 Comportamientos_Jugador/jugador.hpp
 comportamientos/comportamiento.hpp
 Comportamientos_Jugador/comportamientos/comportamiento.hpp
+cmath
+-
 list
+-
+stack
+-
+queue
+-
+vector
+-
+set
 -
 
 include/comportamientolib.hpp

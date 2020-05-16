@@ -1,4 +1,4 @@
-# Install script for directory: /home/pedro/repositorio/agente_deliberativo/practica2_linux
+# Install script for directory: /home/pedro/campo_de_batalla/version2
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/pedro/repositorio/agente_deliberativo/practica2_linux/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/pedro/campo_de_batalla/version2/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

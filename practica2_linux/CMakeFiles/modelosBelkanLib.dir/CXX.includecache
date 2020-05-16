@@ -6,51 +6,51 @@
 
 #IncludeRegexTransform: 
 
-/home/pedro/repositorio/agente_deliberativo/practica2_linux/src/modelos/aldeano/aldeano.cpp
+/home/pedro/campo_de_batalla/version2/src/modelos/aldeano/aldeano.cpp
 modelos/aldeano/aldeano.hpp
-/home/pedro/repositorio/agente_deliberativo/practica2_linux/src/modelos/aldeano/modelos/aldeano/aldeano.hpp
+/home/pedro/campo_de_batalla/version2/src/modelos/aldeano/modelos/aldeano/aldeano.hpp
 
-/home/pedro/repositorio/agente_deliberativo/practica2_linux/src/modelos/aldeano/brazo.cpp
+/home/pedro/campo_de_batalla/version2/src/modelos/aldeano/brazo.cpp
 modelos/aldeano/brazo.hpp
-/home/pedro/repositorio/agente_deliberativo/practica2_linux/src/modelos/aldeano/modelos/aldeano/brazo.hpp
+/home/pedro/campo_de_batalla/version2/src/modelos/aldeano/modelos/aldeano/brazo.hpp
 
-/home/pedro/repositorio/agente_deliberativo/practica2_linux/src/modelos/aldeano/cabeza.cpp
+/home/pedro/campo_de_batalla/version2/src/modelos/aldeano/cabeza.cpp
 modelos/aldeano/cabeza.hpp
-/home/pedro/repositorio/agente_deliberativo/practica2_linux/src/modelos/aldeano/modelos/aldeano/cabeza.hpp
+/home/pedro/campo_de_batalla/version2/src/modelos/aldeano/modelos/aldeano/cabeza.hpp
 
-/home/pedro/repositorio/agente_deliberativo/practica2_linux/src/modelos/aldeano/cintura.cpp
+/home/pedro/campo_de_batalla/version2/src/modelos/aldeano/cintura.cpp
 modelos/aldeano/cintura.hpp
-/home/pedro/repositorio/agente_deliberativo/practica2_linux/src/modelos/aldeano/modelos/aldeano/cintura.hpp
+/home/pedro/campo_de_batalla/version2/src/modelos/aldeano/modelos/aldeano/cintura.hpp
 
-/home/pedro/repositorio/agente_deliberativo/practica2_linux/src/modelos/aldeano/pierna.cpp
+/home/pedro/campo_de_batalla/version2/src/modelos/aldeano/pierna.cpp
 modelos/aldeano/pierna.hpp
-/home/pedro/repositorio/agente_deliberativo/practica2_linux/src/modelos/aldeano/modelos/aldeano/pierna.hpp
+/home/pedro/campo_de_batalla/version2/src/modelos/aldeano/modelos/aldeano/pierna.hpp
 
-/home/pedro/repositorio/agente_deliberativo/practica2_linux/src/modelos/aldeano/torso.cpp
+/home/pedro/campo_de_batalla/version2/src/modelos/aldeano/torso.cpp
 modelos/aldeano/torso.hpp
-/home/pedro/repositorio/agente_deliberativo/practica2_linux/src/modelos/aldeano/modelos/aldeano/torso.hpp
+/home/pedro/campo_de_batalla/version2/src/modelos/aldeano/modelos/aldeano/torso.hpp
 
-/home/pedro/repositorio/agente_deliberativo/practica2_linux/src/modelos/arbol/arbol.cpp
+/home/pedro/campo_de_batalla/version2/src/modelos/arbol/arbol.cpp
 modelos/arbol/arbol.hpp
-/home/pedro/repositorio/agente_deliberativo/practica2_linux/src/modelos/arbol/modelos/arbol/arbol.hpp
+/home/pedro/campo_de_batalla/version2/src/modelos/arbol/modelos/arbol/arbol.hpp
 GL/glut.h
 -
 
-/home/pedro/repositorio/agente_deliberativo/practica2_linux/src/modelos/item/item.cpp
+/home/pedro/campo_de_batalla/version2/src/modelos/item/item.cpp
 modelos/item/item.hpp
-/home/pedro/repositorio/agente_deliberativo/practica2_linux/src/modelos/item/modelos/item/item.hpp
+/home/pedro/campo_de_batalla/version2/src/modelos/item/modelos/item/item.hpp
 
-/home/pedro/repositorio/agente_deliberativo/practica2_linux/src/modelos/jugador/jugador3d.cpp
+/home/pedro/campo_de_batalla/version2/src/modelos/jugador/jugador3d.cpp
 modelos/jugador/jugador3d.hpp
-/home/pedro/repositorio/agente_deliberativo/practica2_linux/src/modelos/jugador/modelos/jugador/jugador3d.hpp
+/home/pedro/campo_de_batalla/version2/src/modelos/jugador/modelos/jugador/jugador3d.hpp
 
-/home/pedro/repositorio/agente_deliberativo/practica2_linux/src/modelos/jugador/quesito.cpp
+/home/pedro/campo_de_batalla/version2/src/modelos/jugador/quesito.cpp
 modelos/jugador/quesito.hpp
-/home/pedro/repositorio/agente_deliberativo/practica2_linux/src/modelos/jugador/modelos/jugador/quesito.hpp
+/home/pedro/campo_de_batalla/version2/src/modelos/jugador/modelos/jugador/quesito.hpp
 
-/home/pedro/repositorio/agente_deliberativo/practica2_linux/src/modelos/retrato.cpp
+/home/pedro/campo_de_batalla/version2/src/modelos/retrato.cpp
 modelos/retrato.hpp
-/home/pedro/repositorio/agente_deliberativo/practica2_linux/src/modelos/modelos/retrato.hpp
+/home/pedro/campo_de_batalla/version2/src/modelos/modelos/retrato.hpp
 
 include/modelos/aldeano/aldeano.hpp
 modelos/aldeano/torso.hpp
