@@ -39,8 +39,11 @@ struct nodoNivel2 {
   int bateria, distancia; 
   float prioridad;
   int destinoF,destinoC;
-  bool bikini_on, zapatillas_on; 
+  bool bikini_on, zapatillas_on;
+  char mi_tipo,tipo_padre; //almacena tipo de terreno
 
+  //bool especulando; 
+  //list<Action> secuencia_conocidos;
  
   
   int distanciaManhattan( int destinoF, int destinoC, int posF, int posC) {
@@ -63,7 +66,7 @@ struct nodoNivel2 {
   }
 
   void calculaPrioridad(){
-    prioridad = distancia;
+    prioridad = bateria;
   }
 
   void actualizaBateria(int gasto) {
@@ -71,7 +74,8 @@ struct nodoNivel2 {
   }
   //tendrá preferencia en la cola el que menos prioridad tenga
   bool operator<(const nodoNivel2 & otroNodo) const {
-    return prioridad > otroNodo.prioridad || (prioridad == otroNodo.prioridad && bateria > otroNodo.bateria);
+    return prioridad > otroNodo.prioridad || (prioridad == otroNodo.prioridad && bateria > otroNodo.bateria)
+      || (prioridad == otroNodo.prioridad && n < otro.nodo) ;
     }
   
 };

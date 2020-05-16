@@ -479,6 +479,11 @@ int  ComportamientoJugador::gastoBateria( char tipoCasilla, bool &bikini_on, boo
     gasto = 2;
     break;
 
+    //ESTIMACIÓN 
+  case '?':
+    gasto = 3;
+    break;
+
 
   }
 
@@ -582,8 +587,6 @@ bool ComportamientoJugador::pathFinding_CostoUniforme(const estado &origen, cons
 
 // ==================== NIVEL 2 ==========================
 
-
-
 bool ComportamientoJugador::pathFinding_Nivel2(const estado &origen, const estado &destino, list<Action> &plan, Sensores & sensores) {
   //Borro la lista
   cout << "Calculando plan\n";
@@ -591,17 +594,18 @@ bool ComportamientoJugador::pathFinding_Nivel2(const estado &origen, const estad
   set<estado,ComparaEstados> generados;          // Lista de Cerrados
   priority_queue<nodoNivel2> cola_prioridad;	 // Lista de Abiertos
 
-  nodoNivel2 current,candidato;
+  nodoNivel2 current;
   current.n.st = origen;
   current.n.secuencia.empty();
   current.bikini_on = bikiniEquipado();
-  current.zapatillas_on = zapatillasEquipadas(); 
+  current.zapatillas_on = zapatillasEquipadas();
+  current.bateria = 0;
 
 
 
   bool modo_ahorro = false;
   //fijamos un objetivo
-  if(sensores.bateria < 200) {
+  if(sensores.bateria < 200 && !casillasBateria.empty()) {
     set<punto> baterias;
     modo_ahorro = true;
     // metemos todos los puntos 
@@ -622,29 +626,22 @@ bool ComportamientoJugador::pathFinding_Nivel2(const estado &origen, const estad
     current.destinoF = destino.fila;
     current.destinoC = destino.columna;
   }
-  current.calculaDistancia();
+  
   current.calculaPrioridad();
   
-  candidato = current;
+ 
 
   vector<Action> opcionesPosibles = {actFORWARD, actTURN_R, actTURN_L};// actIDLE};
 
   cola_prioridad.push(current);
-  bool sin_alcanzar = true;
-  bool cambio_current = false;
 
   
-  while (!cola_prioridad.empty() and (sin_alcanzar)){
+  while (!cola_prioridad.empty() and (current.n.st.fila!=destino.fila or current.n.st.columna != destino.columna)){
 
     cola_prioridad.pop();
    
     generados.insert(current.n.st);
 
-    //mantiene el mejor por distancia, no por 
-    if(candidato.distancia > current.distancia) {
-      candidato = current;
-    }
-    
     //generamos hijos
     for(auto d : opcionesPosibles)
       generaHijo(current, d, generados, cola_prioridad); 
@@ -652,31 +649,15 @@ bool ComportamientoJugador::pathFinding_Nivel2(const estado &origen, const estad
     // Tomo el siguiente valor de la cola_prioridad
     if (!cola_prioridad.empty()){
       current = cola_prioridad.top();
-      //mantiene el mejor por distancia, no por 
-      if(candidato.distancia > current.distancia) {
-	candidato = current;
-	cambio_current = true;
-      }
-      if (current.distancia == 0){
-	sin_alcanzar = false;
 
-	if(modo_ahorro) {
-	  for( int i=0; i<20; i++)
-	    candidato.n.secuencia.push_back(actIDLE);
-	  
-	  
-	}
-	  
-      }
 	
     }
   }
- 
-  cout << "Terminada la busqueda\n";
+ cout << "Terminada la busqueda\n";
 
-  if (cambio_current){
+  if (current.n.st.fila == destino.fila and current.n.st.columna == destino.columna){
     cout << "Cargando el plan\n";
-    plan = candidato.n.secuencia;
+    plan = current.n.secuencia;
     cout << "Longitud del plan: " << plan.size() << endl;
     PintaPlan(plan);
     // ver el plan en el mapa
@@ -684,12 +665,15 @@ bool ComportamientoJugador::pathFinding_Nivel2(const estado &origen, const estad
     return true;
   }
   else {
-    cout << "SITUACIÓN DE BLOQUEOO\n";
+    cout << "No encontrado plan\n";
   }
+
 
 
   return false;
 }
+
+
 
 
 bool ComportamientoJugador::actualizaMapa ( int bloque , int inicio, Sensores & sensores ){
@@ -762,8 +746,8 @@ bool ComportamientoJugador::generaHijo(nodoNivel2 nodo, Action direccion,  set<e
 
   // cout << "Vamos a añadir un nodo" <<  mapaResultado[nodo.n.st.fila][nodo.n.st.columna] << endl;
   char tipo_casilla = mapaResultado[nodo.n.st.fila][nodo.n.st.columna] ;
-  if( tipo_casilla == '?')
-    return false;
+  //  if( tipo_casilla == '?')
+  //return false;
   
   if(direccion == actFORWARD && HayObstaculoDelante(nodo.n.st)) {
       
@@ -788,12 +772,40 @@ bool ComportamientoJugador::generaHijo(nodoNivel2 nodo, Action direccion,  set<e
 
 
   if (generados.find(nodo.n.st) == generados.end()){
-    nodo.actualizaInfo( gastoBateria(tipo_casilla, nodo.bikini_on, nodo.zapatillas_on));
-    //cout << "Se crea hijo izquierdo con coste de bateria " << nodo.prioridad << endl; 
-    nodo.n.secuencia.push_back(direccion);
-    cola_prioridad.push(nodo);
+
+    if((tipo_casilla != '?') {
+	if (tipo_casilla == 'X') {
+	  //actualizamos tipo
+
+	  nodo.tipo_padre = nodo.mi_tipo;
+	  nodo.mi_tipo = tipo_casilla;
+
+	  //ajuste bateria
+	  int bateria_actual =  sensores.bateria;
+
+	  while(bateria_actual < 2996 ) { //máximo de batería 3000, recarga de 5 en 5
+	    nodo.bateria -= 4; // ESTIMACIÓN BONIFICACIÓN
+	    nodo.n.secuencia.push_back(actIDLE);
+	  }
+	  nodo.n.secuencia.push_back(direccion);
+	  
+	}
+
+	//añadir que co
+      }
+      else {
+	//estimación de la distancia que le queda
+	nodo.bateria += nodo.distancia* gastoBateria(nodo.tipo_padre, nodo.bikini_on, nodo.zapatillas_on);
+
+	nodo.n.st.fila = nodo.destinoF;
+	nodo.n.st.columna = nodo.destinoC;
+      }
+      nodo.actualizaInfo( gastoBateria(tipo_casilla, nodo.bikini_on, nodo.zapatillas_on));
     
-    return true; //se envía el nodo modoficado
+     
+      cola_prioridad.push(nodo);
+      
+      return true; //se envía el nodo modoficado
+      }
+    return false;
   }
-  return false;
-}
