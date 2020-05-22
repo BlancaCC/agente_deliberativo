@@ -1,0 +1,9 @@
+/home/pedro/campo_de_batalla/practica2_linux (2)/CMakeFiles/BelkanSG.dir
+/home/pedro/campo_de_batalla/practica2_linux (2)/CMakeFiles/Belkan.dir
+/home/pedro/campo_de_batalla/practica2_linux (2)/CMakeFiles/obj3DLib.dir
+/home/pedro/campo_de_batalla/practica2_linux (2)/CMakeFiles/edit_cache.dir
+/home/pedro/campo_de_batalla/practica2_linux (2)/CMakeFiles/GLUILib.dir
+/home/pedro/campo_de_batalla/practica2_linux (2)/CMakeFiles/modelosBelkanLib.dir
+/home/pedro/campo_de_batalla/practica2_linux (2)/CMakeFiles/comportamientosLib.dir
+/home/pedro/campo_de_batalla/practica2_linux (2)/CMakeFiles/rebuild_cache.dir
+/home/pedro/campo_de_batalla/practica2_linux (2)/CMakeFiles/motorLib.dir
